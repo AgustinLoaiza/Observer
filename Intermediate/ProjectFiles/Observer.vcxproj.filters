@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Observer.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{9DDF720C-84A1-4081-A33B-B4AB09FD02EF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Observer.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ObserverEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{07B06C97-1808-4803-8659-CEE3DC9D0E3A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Observer">
+      <UniqueIdentifier>{29117E7C-A5CD-47D2-B2E2-E2523A7CE0E8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Observer\Observer.Build.cs">
+      <Filter>Source\Observer</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Observer\Observer.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\Observer.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\ObserverGameMode.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\ObserverGameMode.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\ObserverPawn.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\ObserverPawn.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\ObserverProjectile.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\ObserverProjectile.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
