@@ -23,4 +23,15 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+private:
+	UPROPERTY(VisibleAnywhere, Category = "Publicador")
+	TArray<AActor*> Suscriptores;
+
+	class ISuscriptora* Suscriptor;
+
+public:
+	void Suscribirse(AActor* _Suscriptor);
+	void Desuscribirse(AActor* _Suscriptor);
+	void Notificar();
+
 };

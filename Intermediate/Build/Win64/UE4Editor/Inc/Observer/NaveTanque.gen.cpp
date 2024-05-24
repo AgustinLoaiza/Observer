@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveTanque() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveTanque, 60486489);
+	IMPLEMENT_CLASS(ANaveTanque, 473767129);
 	template<> OBSERVER_API UClass* StaticClass<ANaveTanque>()
 	{
 		return ANaveTanque::StaticClass();

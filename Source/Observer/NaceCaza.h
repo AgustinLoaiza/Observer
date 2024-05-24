@@ -14,4 +14,28 @@ class OBSERVER_API ANaceCaza : public ANaveEnemiga
 {
 	GENERATED_BODY()
 	
+public:
+	ANaceCaza();
+
+	virtual void Tick(float DeltaTime) override;
+
+public:
+	uint32 bCanFire : 1;
+
+	FVector GunOffset;
+
+	float FireRate;
+
+	int vida = 50;
+
+	FTimerHandle TimerHandle_ShotTimerExpired;
+
+	void ShotTimerExpired();
+
+public:
+	void Mover(float DeltaTime) override;
+	void Disparar(FVector FireDirection) override;
+	void RecibirDanio() override;
+	void Curarse() override;
+
 };

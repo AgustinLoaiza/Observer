@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveFugaz() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveFugaz, 3532590754);
+	IMPLEMENT_CLASS(ANaveFugaz, 3578957438);
 	template<> OBSERVER_API UClass* StaticClass<ANaveFugaz>()
 	{
 		return ANaveFugaz::StaticClass();

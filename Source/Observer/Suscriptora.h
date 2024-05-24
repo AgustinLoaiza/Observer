@@ -22,4 +22,5 @@ class OBSERVER_API ISuscriptora
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+	virtual void Actualizar(class APublicador* _Publicador) = 0;
 };

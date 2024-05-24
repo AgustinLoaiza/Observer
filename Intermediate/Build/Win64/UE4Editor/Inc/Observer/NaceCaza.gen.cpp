@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeNaceCaza() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaceCaza, 2445280670);
+	IMPLEMENT_CLASS(ANaceCaza, 2036690266);
 	template<> OBSERVER_API UClass* StaticClass<ANaceCaza>()
 	{
 		return ANaceCaza::StaticClass();

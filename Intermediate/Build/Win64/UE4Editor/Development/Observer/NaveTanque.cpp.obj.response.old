@@ -265,9 +265,9 @@
 /FI"C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\ObserverEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Yu"C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\ObserverEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Fp"C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\ObserverEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveEnemiga.cpp"
+"C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveTanque.cpp"
 /FI"C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Development\Observer\Definitions.Observer.h"
-/Fo"C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Development\Observer\NaveEnemiga.cpp.obj"
+/Fo"C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Development\Observer\NaveTanque.cpp.obj"
 /TP
 /GR-
 /W4

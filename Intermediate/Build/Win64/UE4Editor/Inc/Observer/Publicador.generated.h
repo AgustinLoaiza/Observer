@@ -58,7 +58,10 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APublicador)
 
 
-#define Observer_Source_Observer_Publicador_h_12_PRIVATE_PROPERTY_OFFSET
+#define Observer_Source_Observer_Publicador_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__Suscriptores() { return STRUCT_OFFSET(APublicador, Suscriptores); }
+
+
 #define Observer_Source_Observer_Publicador_h_9_PROLOG
 #define Observer_Source_Observer_Publicador_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

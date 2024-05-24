@@ -13,5 +13,21 @@ UCLASS()
 class OBSERVER_API ARadar : public APublicador
 {
 	GENERATED_BODY()
+
+public:
+	ARadar();
+
+protected:
+	virtual void BeginPlay() override;
+
+public:
+	virtual void Tick(float DeltaTime) override;
+
+	int Energia;
+
+public:
+	void VidaNave();
+	void SetEnergia(int _Energia);
+	FORCEINLINE FString GetEnergia();
 	
 };

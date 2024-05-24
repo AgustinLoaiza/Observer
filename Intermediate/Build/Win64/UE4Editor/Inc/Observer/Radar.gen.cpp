@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeRadar() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARadar, 2432456915);
+	IMPLEMENT_CLASS(ARadar, 1292862360);
 	template<> OBSERVER_API UClass* StaticClass<ARadar>()
 	{
 		return ARadar::StaticClass();
