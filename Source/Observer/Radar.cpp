@@ -23,13 +23,13 @@ void ARadar::VidaNave()
 	Notificar();
 }
 
-void ARadar::SetEnergia(int _Energia)
+void ARadar::SetVidaPromedio(float _VidaPromedio)
 {
-	Energia = _Energia;
+	VidaPromedio = _VidaPromedio;
 	VidaNave();
 }
 
-FString ARadar::GetEnergia()
+float ARadar::GetVidaPromedio()
 {
-	Energia;
+	return VidaPromedio;
 }

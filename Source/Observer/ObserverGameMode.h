@@ -13,6 +13,21 @@ class AObserverGameMode : public AGameModeBase
 
 public:
 	AObserverGameMode();
+
+protected:
+	virtual void BeginPlay() override;
+
+public:
+	virtual void Tick(float DeltaTime) override;
+
+public:
+	class ARadar* Radar;
+	class ANaceCaza* NaveCaza;
+	TArray<class ANaveEnemiga*> Naves;
+	class ANaveFugaz* NaveFugaz;
+	class ANaveTanque* NaveTanque;
+
+	float VidaPromedio;
 };
 
 

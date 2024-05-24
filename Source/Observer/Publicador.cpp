@@ -38,9 +38,9 @@ void APublicador::Desuscribirse(AActor* _Suscriptor)
 
 void APublicador::Notificar()
 {
-	for (AActor* Suscriptor : Suscriptores)
+	for (AActor* Sub : Suscriptores)
 	{
-		ISuscriptora* Suscriptora = Cast<ISuscriptora>(Suscriptor);
+		ISuscriptora* Suscriptora = Cast<ISuscriptora>(Sub);
 		if (Suscriptora)
 		{
 			Suscriptora->Actualizar(this);

@@ -23,11 +23,11 @@ protected:
 public:
 	virtual void Tick(float DeltaTime) override;
 
-	int Energia;
+	float VidaPromedio;
 
 public:
 	void VidaNave();
-	void SetEnergia(int _Energia);
-	FORCEINLINE FString GetEnergia();
+	void SetVidaPromedio(float _VidaPromedio);
+	FORCEINLINE float GetVidaPromedio();
 	
 };

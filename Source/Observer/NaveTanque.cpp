@@ -8,7 +8,7 @@ ANaveTanque::ANaveTanque()
 {
 	PrimaryActorTick.bCanEverTick = true;
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
-	mallaNaveEnemiga = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
+	mallaNaveEnemiga = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh")); 
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 	GetActorRelativeScale3D();
 	SetActorScale3D(FVector(1.0f, 1.0f, 1.0f));
@@ -17,6 +17,7 @@ ANaveTanque::ANaveTanque()
 	bCanFire = true;
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 1.5f;
+	Vida = 150;
 }
 
 void ANaveTanque::Tick(float DeltaTime)
@@ -66,8 +67,8 @@ void ANaveTanque::ShotTimerExpired()
 
 void ANaveTanque::RecibirDanio()
 {
-	vida -= 10;
-	if (vida <= 0)
+	Vida -= 10;
+	if (Vida <= 0)
 	{
 		Destroy();
 	}
@@ -75,5 +76,5 @@ void ANaveTanque::RecibirDanio()
 
 void ANaveTanque::Curarse()
 {
-	vida = 150;
+	Vida = 150;
 }

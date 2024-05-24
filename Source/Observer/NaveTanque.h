@@ -26,8 +26,6 @@ public:
 
 	float FireRate;
 
-	int vida = 50;
-
 	FTimerHandle TimerHandle_ShotTimerExpired;
 
 	void ShotTimerExpired();

@@ -60,10 +60,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANaveEnemiga)
 
 
-#define Observer_Source_Observer_NaveEnemiga_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__mallaNaveEnemiga() { return STRUCT_OFFSET(ANaveEnemiga, mallaNaveEnemiga); }
-
-
+#define Observer_Source_Observer_NaveEnemiga_h_14_PRIVATE_PROPERTY_OFFSET
 #define Observer_Source_Observer_NaveEnemiga_h_11_PROLOG
 #define Observer_Source_Observer_NaveEnemiga_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

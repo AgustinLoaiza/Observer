@@ -25,20 +25,25 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-protected:
+public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* mallaNaveEnemiga;
 
 	int velocidad;
+	float Vida;
+	bool Escape;
+
+	UPROPERTY(VisibleAnywhere, Category = "Subscriptor")
+	class ARadar* Radar;
 
 public:
 	void EstablecerRadar(class ARadar* _Radar);
 	void Actualizar(class APublicador* _Publicador) override;
 	void Escapar() override;
 	void QuitarSuscripcion();
+	virtual void Huir(float DeltaTime);
 
 	virtual void Mover(float DeltaTime) PURE_VIRTUAL(ANaveEnemiga::Mover, );
-	virtual void MoverExpired();
 	virtual void Disparar(FVector FireDiretion) PURE_VIRTUAL(ANaveEnemiga::Disparar, );
 	virtual void RecibirDanio() PURE_VIRTUAL(ANaveEnemiga::RecibirDanio, );
 	virtual void Curarse() PURE_VIRTUAL(ANaveEnemiga::Curarse, );

@@ -36,7 +36,7 @@ public: \
 
 #define Observer_Source_Observer_NaceCaza_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ANaceCaza(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ANaceCaza(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANaceCaza) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ANaceCaza); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANaceCaza); \
@@ -48,8 +48,6 @@ public:
 
 
 #define Observer_Source_Observer_NaceCaza_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ANaceCaza() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANaceCaza(ANaceCaza&&); \

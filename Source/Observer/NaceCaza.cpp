@@ -17,6 +17,7 @@ ANaceCaza::ANaceCaza()
 	bCanFire = true;
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 1.5f;
+	Vida = 100;
 }
 
 void ANaceCaza::Tick(float DeltaTime)
@@ -71,8 +72,8 @@ void ANaceCaza::ShotTimerExpired()
 void ANaceCaza::RecibirDanio()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("NaveCaza::RecibirDanio"));
-	vida -= 5;
-	if (vida <= 0)
+	Vida -= 5;
+	if (Vida <= 0)
 	{
 		Destroy();
 	}
@@ -80,5 +81,5 @@ void ANaceCaza::RecibirDanio()
 
 void ANaceCaza::Curarse()
 {
-	vida += 100;
+	Vida += 100;
 }

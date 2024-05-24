@@ -3,5 +3,9 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UOb
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/NaceCaza.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveEnemiga.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Suscriptora.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Suscriptora.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Socorro.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Socorro.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveEnemiga.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaceCaza.generated.h

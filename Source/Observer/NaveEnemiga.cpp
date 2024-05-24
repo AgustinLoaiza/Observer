@@ -2,14 +2,15 @@
 
 
 #include "NaveEnemiga.h"
-#include "Radar.h""
+#include "Radar.h"
 
 // Sets default values
 ANaveEnemiga::ANaveEnemiga()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	Energia=100;
+	Vida=100;
+	Escape = false;
 }
 
 // Called when the game starts or when spawned
@@ -23,6 +24,7 @@ void ANaveEnemiga::BeginPlay()
 void ANaveEnemiga::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	Huir(DeltaTime); 
 
 }
 
@@ -34,7 +36,7 @@ void ANaveEnemiga::EstablecerRadar(ARadar* _Radar)
 		return;
 	}
 		Radar = _Radar;
-		Radar->Suscribir(this);
+		Radar->Suscribirse(this);
 }
 
 void ANaveEnemiga::Actualizar(APublicador* _Publicador)
@@ -43,18 +45,34 @@ void ANaveEnemiga::Actualizar(APublicador* _Publicador)
 }
 
 void ANaveEnemiga::Escapar() 
-{ 
+{
+	float VidaRecivida = Radar->GetVidaPromedio();
+	if (VidaRecivida < 10)
+	{
+		Escape = true;
+	}
 }
 
 void ANaveEnemiga::QuitarSuscripcion() 
 {
 	if (Radar)
 	{
-		Radar->Desuscribir(this); 
+		Radar->Desuscribirse(this); 
 	}
 }
 
-void ANaveEnemiga::MoverExpired()
+void ANaveEnemiga::Huir(float DeltaTime)
 {
+	if (Escape==true)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Huyendo"));
+		SetActorLocation(FMath::VInterpTo(GetActorLocation(),FVector(1700.0f, -147.0f, 215.0f), DeltaTime, 5));
+	}
+	if (GetActorLocation().Equals(FVector(1700.0f, -147.0f, 215.0f),100))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Retorno al combate"));
+		Escape = false;
+	}
 }
+
 

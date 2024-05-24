@@ -17,6 +17,7 @@ ANaveFugaz::ANaveFugaz()
 	bCanFire = true;
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 1.5f;
+	Vida = 100;
 }
 
 void ANaveFugaz::Tick(float DeltaTime)
@@ -81,8 +82,8 @@ void ANaveFugaz::ShotTimerExpired()
 
 void ANaveFugaz::RecibirDanio()
 {
-	vida -= 5;
-	if (vida <= 0)
+	Vida -= 5;
+	if (Vida <= 0)
 	{
 		Destroy();
 	}
@@ -90,5 +91,5 @@ void ANaveFugaz::RecibirDanio()
 
 void ANaveFugaz::Curarse()
 {
-	vida = 100;
+	Vida = 100;
 }
