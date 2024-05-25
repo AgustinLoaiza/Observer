@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "NaceCaza.h"
+#include "NaveFugaz.h"
+#include "NaveTanque.h"
 #include "ObserverProjectile.generated.h"
 
 class UProjectileMovementComponent;

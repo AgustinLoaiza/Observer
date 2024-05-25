@@ -17,6 +17,8 @@ class OBSERVER_API ANaveTanque : public ANaveEnemiga
 public:
 	ANaveTanque();
 
+	virtual void BeginPlay() override;
+
 	virtual void Tick(float DeltaTime) override;
 
 public:

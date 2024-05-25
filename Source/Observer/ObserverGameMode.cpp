@@ -20,9 +20,9 @@ void AObserverGameMode::BeginPlay()
 	Super::BeginPlay();
 	Radar = GetWorld()->SpawnActor<ARadar>(ARadar::StaticClass());
 
-	FVector ubicacionInicialNavesCazas = FVector(1000.0f, -150.0f, 200.0f);
-	FVector ubicacionInicialNavesTanques = FVector(800.0f, -150.0f, 200.0f);
-	FVector ubicacionInicialNavesFugaces = FVector(1200.0f, -450.0f, 200.0f);
+	ubicacionInicialNavesCazas = FVector(1000.0f, -150.0f, 200.0f);
+	ubicacionInicialNavesTanques = FVector(800.0f, -150.0f, 200.0f);
+	ubicacionInicialNavesFugaces = FVector(1200.0f, -450.0f, 200.0f);
 
 	// Generar Naves Fugaces en las esquinas
 	for (int i = 0; i < 2; i++) {
@@ -47,9 +47,6 @@ void AObserverGameMode::BeginPlay()
 		NaveCaza->EstablecerRadar(Radar);
 		Naves.Add(NaveCaza);
 	}
-	//Cantidad de Naves Enemigas
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Cantidad de Naves Enemigas: %d"), Naves.Num()));
-	
 }
 
 void AObserverGameMode::Tick(float DeltaTime)
@@ -58,7 +55,7 @@ void AObserverGameMode::Tick(float DeltaTime)
 	
 	for (int i = 0; i < Naves.Num(); i++)
 	{
-		VidaPromedio = (Naves[i]->Vida+VidaPromedio);
+		VidaPromedio = (Naves[i]->Vida+VidaPromedio/Naves.Num());
 		if (VidaPromedio<20)
 		{
 			Radar->SetVidaPromedio(10);

@@ -17,18 +17,18 @@ struct FHitResult;
 #endif
 #define OBSERVER_ObserverProjectile_generated_h
 
-#define Observer_Source_Observer_ObserverProjectile_h_15_SPARSE_DATA
-#define Observer_Source_Observer_ObserverProjectile_h_15_RPC_WRAPPERS \
+#define Observer_Source_Observer_ObserverProjectile_h_18_SPARSE_DATA
+#define Observer_Source_Observer_ObserverProjectile_h_18_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnHit);
 
 
-#define Observer_Source_Observer_ObserverProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Observer_Source_Observer_ObserverProjectile_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnHit);
 
 
-#define Observer_Source_Observer_ObserverProjectile_h_15_INCLASS_NO_PURE_DECLS \
+#define Observer_Source_Observer_ObserverProjectile_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAObserverProjectile(); \
 	friend struct Z_Construct_UClass_AObserverProjectile_Statics; \
@@ -39,7 +39,7 @@ public: \
 
 
 
-#define Observer_Source_Observer_ObserverProjectile_h_15_INCLASS \
+#define Observer_Source_Observer_ObserverProjectile_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesAObserverProjectile(); \
 	friend struct Z_Construct_UClass_AObserverProjectile_Statics; \
@@ -50,7 +50,7 @@ public: \
 
 
 
-#define Observer_Source_Observer_ObserverProjectile_h_15_STANDARD_CONSTRUCTORS \
+#define Observer_Source_Observer_ObserverProjectile_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AObserverProjectile(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AObserverProjectile) \
@@ -63,7 +63,7 @@ private: \
 public:
 
 
-#define Observer_Source_Observer_ObserverProjectile_h_15_ENHANCED_CONSTRUCTORS \
+#define Observer_Source_Observer_ObserverProjectile_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AObserverProjectile(AObserverProjectile&&); \
@@ -74,32 +74,32 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AObserverProjectile)
 
 
-#define Observer_Source_Observer_ObserverProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
+#define Observer_Source_Observer_ObserverProjectile_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ProjectileMesh() { return STRUCT_OFFSET(AObserverProjectile, ProjectileMesh); } \
 	FORCEINLINE static uint32 __PPO__ProjectileMovement() { return STRUCT_OFFSET(AObserverProjectile, ProjectileMovement); }
 
 
-#define Observer_Source_Observer_ObserverProjectile_h_12_PROLOG
-#define Observer_Source_Observer_ObserverProjectile_h_15_GENERATED_BODY_LEGACY \
+#define Observer_Source_Observer_ObserverProjectile_h_15_PROLOG
+#define Observer_Source_Observer_ObserverProjectile_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Observer_Source_Observer_ObserverProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
-	Observer_Source_Observer_ObserverProjectile_h_15_SPARSE_DATA \
-	Observer_Source_Observer_ObserverProjectile_h_15_RPC_WRAPPERS \
-	Observer_Source_Observer_ObserverProjectile_h_15_INCLASS \
-	Observer_Source_Observer_ObserverProjectile_h_15_STANDARD_CONSTRUCTORS \
+	Observer_Source_Observer_ObserverProjectile_h_18_PRIVATE_PROPERTY_OFFSET \
+	Observer_Source_Observer_ObserverProjectile_h_18_SPARSE_DATA \
+	Observer_Source_Observer_ObserverProjectile_h_18_RPC_WRAPPERS \
+	Observer_Source_Observer_ObserverProjectile_h_18_INCLASS \
+	Observer_Source_Observer_ObserverProjectile_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Observer_Source_Observer_ObserverProjectile_h_15_GENERATED_BODY \
+#define Observer_Source_Observer_ObserverProjectile_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Observer_Source_Observer_ObserverProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
-	Observer_Source_Observer_ObserverProjectile_h_15_SPARSE_DATA \
-	Observer_Source_Observer_ObserverProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Observer_Source_Observer_ObserverProjectile_h_15_INCLASS_NO_PURE_DECLS \
-	Observer_Source_Observer_ObserverProjectile_h_15_ENHANCED_CONSTRUCTORS \
+	Observer_Source_Observer_ObserverProjectile_h_18_PRIVATE_PROPERTY_OFFSET \
+	Observer_Source_Observer_ObserverProjectile_h_18_SPARSE_DATA \
+	Observer_Source_Observer_ObserverProjectile_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	Observer_Source_Observer_ObserverProjectile_h_18_INCLASS_NO_PURE_DECLS \
+	Observer_Source_Observer_ObserverProjectile_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

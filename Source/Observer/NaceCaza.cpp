@@ -4,6 +4,7 @@
 #include "NaceCaza.h"
 #include "ObserverProjectile.h"
 
+
 ANaceCaza::ANaceCaza()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -18,13 +19,33 @@ ANaceCaza::ANaceCaza()
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 1.5f;
 	Vida = 100;
+
+	
+}
+
+void ANaceCaza::BeginPlay()
+{
+	Super::BeginPlay();
+	PosicionInicial = GetActorLocation();
 }
 
 void ANaceCaza::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
 	Mover(DeltaTime); 
 	Disparar(FVector(-1.0f, 0.0f, 0.0f));
+	if (retorno == true)
+	{
+		SetActorLocation(FMath::VInterpTo(GetActorLocation(), PosicionInicial, DeltaTime, 0.5));
+		TiempoTranscurrido += DeltaTime; 
+		if (TiempoTranscurrido>=5)
+		{
+			retorno = false;
+			TiempoTranscurrido = 0;
+		}
+	}
+	
 }
 
 void ANaceCaza::Mover(float DeltaTime)
@@ -81,5 +102,5 @@ void ANaceCaza::RecibirDanio()
 
 void ANaceCaza::Curarse()
 {
-	Vida += 100;
+	Vida = 100;
 }

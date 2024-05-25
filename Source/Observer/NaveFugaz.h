@@ -17,6 +17,8 @@ class OBSERVER_API ANaveFugaz : public ANaveEnemiga
 public:
 	ANaveFugaz();
 
+	virtual void BeginPlay() override;
+
 	virtual void Tick(float DeltaTime) override;
 
 public:

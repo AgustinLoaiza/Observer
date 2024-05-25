@@ -1,5 +1,17 @@
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Development\Observer\Definitions.Observer.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\ObserverProjectile.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaceCaza.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveEnemiga.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Suscriptora.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Suscriptora.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Socorro.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Socorro.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveEnemiga.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaceCaza.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveFugaz.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveFugaz.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveTanque.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveTanque.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverProjectile.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h

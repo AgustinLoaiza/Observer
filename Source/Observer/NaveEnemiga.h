@@ -32,6 +32,11 @@ public:
 	int velocidad;
 	float Vida;
 	bool Escape;
+	FVector PosicionInicial;
+	bool retorno;
+	float TiempoTranscurrido;
+
+	class AObserverGameMode* GameMode;
 
 	UPROPERTY(VisibleAnywhere, Category = "Subscriptor")
 	class ARadar* Radar;
@@ -41,7 +46,7 @@ public:
 	void Actualizar(class APublicador* _Publicador) override;
 	void Escapar() override;
 	void QuitarSuscripcion();
-	virtual void Huir(float DeltaTime);
+	void Huir(float DeltaTime);
 
 	virtual void Mover(float DeltaTime) PURE_VIRTUAL(ANaveEnemiga::Mover, );
 	virtual void Disparar(FVector FireDiretion) PURE_VIRTUAL(ANaveEnemiga::Disparar, );

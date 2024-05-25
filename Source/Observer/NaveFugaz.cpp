@@ -18,6 +18,13 @@ ANaveFugaz::ANaveFugaz()
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 1.5f;
 	Vida = 100;
+	
+}
+
+void ANaveFugaz::BeginPlay()
+{
+	Super::BeginPlay();
+	PosicionInicial = GetActorLocation();
 }
 
 void ANaveFugaz::Tick(float DeltaTime)
@@ -25,6 +32,16 @@ void ANaveFugaz::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	Mover(DeltaTime);
 	Disparar(FVector(-1.0f, 0.0f, 0.0f));
+	if (retorno == true)
+	{
+		SetActorLocation(FMath::VInterpTo(GetActorLocation(), PosicionInicial, DeltaTime, 0.5));
+		TiempoTranscurrido += DeltaTime;
+		if (TiempoTranscurrido >= 5)
+		{
+			retorno = false;
+			TiempoTranscurrido = 0;
+		}
+	}
 }
 
 void ANaveFugaz::Mover(float DeltaTime)

@@ -41,5 +41,22 @@ void AObserverProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
 	}
 
+	ANaceCaza* NaveCaza = Cast<ANaceCaza>(OtherActor);
+	if (NaveCaza != nullptr)
+	{
+		NaveCaza->RecibirDanio();
+	}
+
+	ANaveFugaz* NaveFugaz = Cast<ANaveFugaz>(OtherActor);
+	if (NaveFugaz != nullptr)
+	{
+		NaveFugaz->RecibirDanio();
+	}
+
+	ANaveTanque* NaveTanque = Cast<ANaveTanque>(OtherActor);
+	if (NaveTanque != nullptr)
+	{
+		NaveTanque->RecibirDanio();
+	}
 	Destroy();
 }

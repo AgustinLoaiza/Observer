@@ -21,11 +21,15 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 public:
+	TArray<class ANaveEnemiga*> Naves; 
 	class ARadar* Radar;
 	class ANaceCaza* NaveCaza;
-	TArray<class ANaveEnemiga*> Naves;
 	class ANaveFugaz* NaveFugaz;
 	class ANaveTanque* NaveTanque;
+
+	FVector ubicacionInicialNavesCazas;
+	FVector ubicacionInicialNavesTanques;
+	FVector ubicacionInicialNavesFugaces;
 
 	float VidaPromedio;
 };

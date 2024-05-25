@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Observer.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{66B2A2DD-653D-4303-AD2F-A5F4F8468E96}</UniqueIdentifier>
+      <UniqueIdentifier>{FCA9E317-05AC-4D8A-9060-1DCF69EEDE8A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Observer.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{8963F895-6E7D-4CDA-83CF-259E0223846F}</UniqueIdentifier>
+      <UniqueIdentifier>{9B13A7F2-8E0A-4C4D-896C-85A51EFDDC5E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,8 +32,32 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Observer">
-      <UniqueIdentifier>{D0E5BB4B-1011-4209-95FD-FB414BE8955C}</UniqueIdentifier>
+      <UniqueIdentifier>{B838610E-CD17-41BD-8BC6-F325BA9C9FCE}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Observer\EstadoDebil.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\EstadoDebil.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\EstadoDefensivo.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\EstadoDefensivo.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\EstadoOfensivo.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\EstadoOfensivo.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\EstadosNaveNodriza.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\EstadosNaveNodriza.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Observer\NaceCaza.cpp">
       <Filter>Source\Observer</Filter>
     </ClCompile>
@@ -50,6 +74,12 @@
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\NaveFugaz.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\NaveNodriza.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\NaveNodriza.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Observer\NaveTanque.cpp">
