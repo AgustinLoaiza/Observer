@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "EstadosNaveNodriza.h"
 #include "EstadoDefensivo.generated.h"
 
 UCLASS()
-class OBSERVER_API AEstadoDefensivo : public AActor
+class OBSERVER_API AEstadoDefensivo : public AActor, public IEstadosNaveNodriza
 {
 	GENERATED_BODY()
 	
@@ -22,5 +23,17 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+protected:
+	class ANaveNodriza* NaveNodriza;
+
+public:
+	void SetNaveNodriza(class ANaveNodriza* NaveNodriza) override;
+	void EstadoDefensivo() override;
+	FORCEINLINE FString GetEstado() override;
+
+private:
+	void EstadoOfensivo() override {};
+	void EstadoDebil() override {};
 
 };

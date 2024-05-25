@@ -25,3 +25,16 @@ void AEstadoOfensivo::Tick(float DeltaTime)
 
 }
 
+void AEstadoOfensivo::SetNaveNodriza(ANaveNodriza* NaveNodriza)
+{
+}
+
+void AEstadoOfensivo::EstadoOfensivo()
+{
+}
+
+FString AEstadoOfensivo::GetEstado()
+{
+	return FString();
+}
+

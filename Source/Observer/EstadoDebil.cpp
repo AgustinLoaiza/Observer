@@ -25,3 +25,16 @@ void AEstadoDebil::Tick(float DeltaTime)
 
 }
 
+void AEstadoDebil::SetNaveNodriza(ANaveNodriza* NaveNodriza)
+{
+}
+
+void AEstadoDebil::EstadoDebil()
+{
+}
+
+FString AEstadoDebil::GetEstado()
+{
+	return FString();
+}
+

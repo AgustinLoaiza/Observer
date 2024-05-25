@@ -2,6 +2,10 @@
 
 
 #include "NaveNodriza.h"
+#include "EstadosNaveNodriza.h"
+#include "EstadoDefensivo.h"
+#include "EstadoOfensivo.h"
+#include "EstadoDebil.h"
 
 // Sets default values
 ANaveNodriza::ANaveNodriza()
@@ -23,5 +27,54 @@ void ANaveNodriza::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ANaveNodriza::InicializarEstadosNaveNodriza(FString _Estados)
+{
+	/*if (_Estados.Equals("Estado Defensivo"))
+	{
+		EstadoDefensivo=GetWorld()
+	}*/
+}
+
+void ANaveNodriza::EstablecesEstados(IEstadosNaveNodriza* _Estado)
+{
+}
+
+void ANaveNodriza::NodrizaEstadoDefensivo()
+{
+}
+
+void ANaveNodriza::NodrizaEstadoOfensivo()
+{
+}
+
+void ANaveNodriza::NodrizaEstadoDebil()
+{
+}
+
+IEstadosNaveNodriza* ANaveNodriza::GetEstado()
+{
+	return nullptr;
+}
+
+IEstadosNaveNodriza* ANaveNodriza::GetEstadoDefensivo()
+{
+	return nullptr;
+}
+
+IEstadosNaveNodriza* ANaveNodriza::GetEstadoOfensivo()
+{
+	return nullptr;
+}
+
+IEstadosNaveNodriza* ANaveNodriza::GetEstadoDebil()
+{
+	return nullptr;
+}
+
+FString ANaveNodriza::GetEstadoActual()
+{
+	return FString();
 }
 

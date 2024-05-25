@@ -2,6 +2,7 @@
 
 
 #include "EstadoDefensivo.h"
+#include "NaveNodriza.h"
 
 // Sets default values
 AEstadoDefensivo::AEstadoDefensivo()
@@ -23,5 +24,18 @@ void AEstadoDefensivo::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AEstadoDefensivo::SetNaveNodriza(ANaveNodriza* NaveNodriza)
+{
+}
+
+void AEstadoDefensivo::EstadoDefensivo()
+{
+}
+
+FString AEstadoDefensivo::GetEstado()
+{
+	return FString();
 }
 

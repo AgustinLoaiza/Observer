@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "EstadosNaveNodriza.h"
 #include "NaveNodriza.generated.h"
 
 UCLASS()
@@ -23,4 +24,27 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+//Declaramos todo lo necesario para hacer trabajar los estados de la nave nodriza
+public:
+	//Inicializar los estados de la nave nodriza
+	void InicializarEstadosNaveNodriza(FString _Estados);
+
+	//Declaramos los estados de la nave nodriza
+	IEstadosNaveNodriza* EstadoDefensivo;
+	IEstadosNaveNodriza* EstadoOfensivo;
+	IEstadosNaveNodriza* EstadoDebil;
+
+	//Funciones para cambiar de estado
+	FORCEINLINE void EstablecesEstados(IEstadosNaveNodriza* _Estado);
+
+	void NodrizaEstadoDefensivo();
+	void NodrizaEstadoOfensivo();
+	void NodrizaEstadoDebil();
+
+	//Funciones para obtener los estados
+	FORCEINLINE IEstadosNaveNodriza* GetEstado();
+	FORCEINLINE IEstadosNaveNodriza* GetEstadoDefensivo();
+	FORCEINLINE IEstadosNaveNodriza* GetEstadoOfensivo();
+	FORCEINLINE IEstadosNaveNodriza* GetEstadoDebil();
+	FORCEINLINE FString GetEstadoActual();
 };
