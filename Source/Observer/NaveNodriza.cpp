@@ -12,14 +12,25 @@ ANaveNodriza::ANaveNodriza()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
+	NaveNodrizaMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
+	NaveNodrizaMesh->SetStaticMesh(ShipMesh.Object);
+	GetActorRelativeScale3D();
+	SetActorScale3D(FVector(1.0f, 1.0f, 1.0f));
 
+	vida = 200;
 }
 
 // Called when the game starts or when spawned
 void ANaveNodriza::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	EstadoDefensivo = GetWorld()->SpawnActor<AEstadoDefensivo>(FVector::ZeroVector, FRotator::ZeroRotator); 
+	EstadoOfensivo = GetWorld()->SpawnActor<AEstadoOfensivo>(FVector::ZeroVector, FRotator::ZeroRotator);
+	EstadoDebil = GetWorld()->SpawnActor<AEstadoDebil>(FVector::ZeroVector, FRotator::ZeroRotator);
+
+	InicializarEstadosNaveNodriza(); 
 }
 
 // Called every frame
@@ -27,54 +38,78 @@ void ANaveNodriza::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	Disparar();
+	Mover(DeltaTime);
 }
 
-void ANaveNodriza::InicializarEstadosNaveNodriza(FString _Estados)
+void ANaveNodriza::RecibirDanio()
 {
-	/*if (_Estados.Equals("Estado Defensivo"))
+	vida -= 25;
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Vida: " + FString::SanitizeFloat(vida)));
+	if (vida <= 0)
 	{
-		EstadoDefensivo=GetWorld()
-	}*/
+		Destroy();
+	}
+	InicializarEstadosNaveNodriza(); 
 }
 
-void ANaveNodriza::EstablecesEstados(IEstadosNaveNodriza* _Estado)
+void ANaveNodriza::InicializarEstadosNaveNodriza()
 {
+	if (vida>=100)
+	{
+		EstadoDefensivo->SetNaveNodriza(this);
+		EstablecerEstados(EstadoDefensivo);
+		CrearEscudo(); 
+	}
+	else if (vida>=50 && vida<100)
+	{
+		EstadoOfensivo->SetNaveNodriza(this);
+		EstablecerEstados(EstadoOfensivo);
+	}
+	else
+	{
+		EstadoDebil->SetNaveNodriza(this);
+		EstablecerEstados(EstadoDebil);
+	}
 }
 
-void ANaveNodriza::NodrizaEstadoDefensivo()
+void ANaveNodriza::EstablecerEstados(IEstadosNaveNodriza* _Estado)
 {
+	Estado = _Estado;
 }
 
-void ANaveNodriza::NodrizaEstadoOfensivo()
+void ANaveNodriza::Mover(float DeltaTime)
 {
+	Estado->Mover(DeltaTime);
 }
 
-void ANaveNodriza::NodrizaEstadoDebil()
+void ANaveNodriza::Disparar()
 {
+	Estado->Disparar();
+}
+
+void ANaveNodriza::CrearEscudo()
+{
+	Estado->CrearEscudo();
 }
 
 IEstadosNaveNodriza* ANaveNodriza::GetEstado()
 {
-	return nullptr;
+	return Estado;
 }
 
 IEstadosNaveNodriza* ANaveNodriza::GetEstadoDefensivo()
 {
-	return nullptr;
+	return EstadoDefensivo;
 }
 
 IEstadosNaveNodriza* ANaveNodriza::GetEstadoOfensivo()
 {
-	return nullptr;
+	return EstadoOfensivo;
 }
 
 IEstadosNaveNodriza* ANaveNodriza::GetEstadoDebil()
 {
-	return nullptr;
-}
-
-FString ANaveNodriza::GetEstadoActual()
-{
-	return FString();
+	return EstadoDebil;
 }
 

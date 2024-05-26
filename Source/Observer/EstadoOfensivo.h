@@ -24,15 +24,29 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+public:
+	/** Offset from the ships location to spawn projectiles */
+	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
+	FVector GunOffset;
+
+	/* Flag to control firing  */
+	uint32 bCanFire : 1;
+
+	/** Handle for efficient management of ShotTimerExpired timer */
+	FTimerHandle TimerHandle_ShotTimerExpired;
+
+	float TiempoDisparo;
+
+	void ShotTimerExpired();
 protected:
 	class ANaveNodriza* NaveNodriza;
 
+
 public:
-	void SetNaveNodriza(class ANaveNodriza* NaveNodriza) override;
-	void EstadoOfensivo() override;
-	FORCEINLINE FString GetEstado() override;
+	void SetNaveNodriza(class ANaveNodriza* _NaveNodriza) override;
+	void Mover(float DeltaTime) override;
+	void Disparar() override;
 
 private:
-	void EstadoDefensivo() override {};
-	void EstadoDebil() override {};
+	void CrearEscudo() override {};
 };

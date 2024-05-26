@@ -27,12 +27,12 @@ public:
 protected:
 	class ANaveNodriza* NaveNodriza;
 
+	float velocidad;
 public:
-	void SetNaveNodriza(class ANaveNodriza* NaveNodriza) override;
-	void EstadoDebil() override;
-	FORCEINLINE FString GetEstado() override;
+	void SetNaveNodriza(class ANaveNodriza* _NaveNodriza) override;
+	void Mover(float DeltaTime) override;
 
 private:
-	void EstadoOfensivo() override {};
-	void EstadoDefensivo() override {};
+	void Disparar() override {};
+	void CrearEscudo() override {};
 };

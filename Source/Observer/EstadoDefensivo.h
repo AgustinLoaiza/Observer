@@ -27,13 +27,21 @@ public:
 protected:
 	class ANaveNodriza* NaveNodriza;
 
+	virtual void ResetFire();
+
+	int MaxProjectile;
+
+	int NumberFired;
+	bool bCanFire;
+
+	FVector UltimaPosicionJugador;
+
 public:
-	void SetNaveNodriza(class ANaveNodriza* NaveNodriza) override;
-	void EstadoDefensivo() override;
-	FORCEINLINE FString GetEstado() override;
+	void SetNaveNodriza(class ANaveNodriza* _NaveNodriza) override;
+	void Disparar() override;
+	void CrearEscudo() override;
 
 private:
-	void EstadoOfensivo() override {};
-	void EstadoDebil() override {};
+	void Mover(float DeltaTime) override {};
 
 };

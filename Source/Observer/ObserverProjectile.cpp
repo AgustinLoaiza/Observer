@@ -6,6 +6,8 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Engine/StaticMesh.h"
+#include "NaveNodriza.h"
+#include "Escudo.h"
 
 AObserverProjectile::AObserverProjectile() 
 {
@@ -40,7 +42,11 @@ void AObserverProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
 	}
-
+	AEscudo* Escudo = Cast<AEscudo>(OtherActor);
+	if (Escudo != nullptr)
+	{
+		Escudo->Durabilidad();
+	}
 	ANaceCaza* NaveCaza = Cast<ANaceCaza>(OtherActor);
 	if (NaveCaza != nullptr)
 	{
@@ -58,5 +64,11 @@ void AObserverProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 	{
 		NaveTanque->RecibirDanio();
 	}
+	ANaveNodriza* NaveNodriza = Cast<ANaveNodriza>(OtherActor);
+	if (NaveNodriza != nullptr)
+	{
+		NaveNodriza->RecibirDanio();
+	}
 	Destroy();
+
 }

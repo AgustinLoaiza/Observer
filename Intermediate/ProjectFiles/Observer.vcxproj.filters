@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Observer.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{FCA9E317-05AC-4D8A-9060-1DCF69EEDE8A}</UniqueIdentifier>
+      <UniqueIdentifier>{A52B41BB-0CFB-4656-A91F-75FF5C1C657D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Observer.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{9B13A7F2-8E0A-4C4D-896C-85A51EFDDC5E}</UniqueIdentifier>
+      <UniqueIdentifier>{352F8255-980B-479E-A71F-7431FAEB0977}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,8 +32,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Observer">
-      <UniqueIdentifier>{B838610E-CD17-41BD-8BC6-F325BA9C9FCE}</UniqueIdentifier>
+      <UniqueIdentifier>{D83085CC-5215-4B44-82EB-2A7E47560E93}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Observer\BalaMortero.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\BalaMortero.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\Escudo.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\Escudo.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Observer\EstadoDebil.cpp">
       <Filter>Source\Observer</Filter>
     </ClCompile>

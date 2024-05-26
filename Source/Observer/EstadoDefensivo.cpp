@@ -3,6 +3,11 @@
 
 #include "EstadoDefensivo.h"
 #include "NaveNodriza.h"
+#include "BalaMortero.h"
+#include "Escudo.h"
+#include "Kismet/GameplayStatics.h"
+#include "ObserverProjectile.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 
 // Sets default values
 AEstadoDefensivo::AEstadoDefensivo()
@@ -10,6 +15,12 @@ AEstadoDefensivo::AEstadoDefensivo()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	MaxProjectile = 8;
+	NumberFired = 0;
+
+	bCanFire = true; // Permitir disparos al principio
+
+	TiempoDisparo = 4.0f;
 }
 
 // Called when the game starts or when spawned
@@ -23,19 +34,86 @@ void AEstadoDefensivo::BeginPlay()
 void AEstadoDefensivo::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+    /*if (NaveNodriza)
+    {
+        if (NaveNodriza->GetEstado() == this)
+        {
+            Mover(DeltaTime);
+            Disparar();
+        }
+    }*/
 }
 
-void AEstadoDefensivo::SetNaveNodriza(ANaveNodriza* NaveNodriza)
+void AEstadoDefensivo::SetNaveNodriza(ANaveNodriza* _NaveNodriza)
 {
+	NaveNodriza = Cast<ANaveNodriza>(_NaveNodriza);
+    NaveNodriza->EstablecerEstados(NaveNodriza->GetEstadoDefensivo());
 }
 
-void AEstadoDefensivo::EstadoDefensivo()
+void AEstadoDefensivo::Disparar()
 {
+    if (bCanFire && NumberFired < MaxProjectile)
+    {
+        bCanFire = false;  // Prevenir nuevos disparos hasta que el temporizador expire
+
+        // Obtener el jugador
+        APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+        if (PlayerPawn)
+        {
+            UltimaPosicionJugador = PlayerPawn->GetActorLocation(); // Guardar la última posición del jugador
+        }
+
+        // creador de bombas
+        UWorld* const World = GetWorld();
+        if (World != NULL)
+        {
+            FVector Location = NaveNodriza->GetActorLocation();
+            FRotator Rotation = NaveNodriza->GetActorRotation(); 
+            ABalaMortero* Bala = World->SpawnActor<ABalaMortero>(Location, Rotation);
+            if (Bala)
+            {
+                Bala->SetUltimaPosicionJugador(UltimaPosicionJugador); // Pasar la posición del jugador al proyectil
+            }
+            NumberFired++;
+
+            // Establecer el temporizador para el próximo disparo
+            FTimerHandle TimerHandle;
+            GetWorldTimerManager().SetTimer(TimerHandle, this, &AEstadoDefensivo::ResetFire, TiempoDisparo, false); //cambiar cada cuantoo habrán bombas
+        } 
+    }
 }
 
-FString AEstadoDefensivo::GetEstado()
+void AEstadoDefensivo::ResetFire()
 {
-	return FString();
+    bCanFire = true;
+   
+}
+
+void AEstadoDefensivo::CrearEscudo()
+{
+	// Crear un escudo alrededor de la nave nodriza
+    UWorld* const World = GetWorld();
+    if (World != NULL)
+	{
+        // Se crean 2 escudos adelante y atras
+		FVector Location = NaveNodriza->GetActorLocation();
+        Location = Location + FVector(100.0f, 0.0f, 0.0f);
+		FRotator Rotation = GetActorRotation();
+        for (int i = 0; i < 2; i++)
+        {
+            AEscudo* Escudo = World->SpawnActor<AEscudo>(Location, Rotation); 
+            Location = Location+FVector(-200.0f, 0.0f, 0.0f);
+        }
+        // Se crean 2 escudos de izquierda a derecha
+        Location=Location+FVector(300.0f, 100.0f, 0.0f);
+        Rotation=FRotator(0.0f, 90.0f, 0.0f);
+        for (int i = 0; i < 2; i++)
+        {
+            AEscudo* Escudo = World->SpawnActor<AEscudo>(Location, Rotation); 
+            Location = Location + FVector(0.0f, -200.0f, 0.0f); 
+        }
+		
+	}
+	
 }
 

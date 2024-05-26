@@ -24,27 +24,35 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+//Declaramos las caracteristicas de la nave nodriza
+public:
+	UStaticMeshComponent* NaveNodrizaMesh;
+
+	float vida;
+
+	void RecibirDanio();
+
 //Declaramos todo lo necesario para hacer trabajar los estados de la nave nodriza
 public:
 	//Inicializar los estados de la nave nodriza
-	void InicializarEstadosNaveNodriza(FString _Estados);
+	void InicializarEstadosNaveNodriza();
 
 	//Declaramos los estados de la nave nodriza
 	IEstadosNaveNodriza* EstadoDefensivo;
 	IEstadosNaveNodriza* EstadoOfensivo;
 	IEstadosNaveNodriza* EstadoDebil;
+	IEstadosNaveNodriza* Estado;
 
 	//Funciones para cambiar de estado
-	FORCEINLINE void EstablecesEstados(IEstadosNaveNodriza* _Estado);
+	FORCEINLINE void EstablecerEstados(IEstadosNaveNodriza* _Estado);
 
-	void NodrizaEstadoDefensivo();
-	void NodrizaEstadoOfensivo();
-	void NodrizaEstadoDebil();
+	void Mover(float DeltaTime);
+	void Disparar();
+	void CrearEscudo();
 
 	//Funciones para obtener los estados
 	FORCEINLINE IEstadosNaveNodriza* GetEstado();
 	FORCEINLINE IEstadosNaveNodriza* GetEstadoDefensivo();
 	FORCEINLINE IEstadosNaveNodriza* GetEstadoOfensivo();
 	FORCEINLINE IEstadosNaveNodriza* GetEstadoDebil();
-	FORCEINLINE FString GetEstadoActual();
 };

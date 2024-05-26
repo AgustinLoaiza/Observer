@@ -32,6 +32,10 @@ public:
 	FVector ubicacionInicialNavesFugaces;
 
 	float VidaPromedio;
+
+public:
+	FVector ubicacionInicialNaveNodriza;
+	class ANaveNodriza* NaveNodriza;
 };
 
 

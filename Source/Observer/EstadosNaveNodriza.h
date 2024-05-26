@@ -22,12 +22,12 @@ class OBSERVER_API IEstadosNaveNodriza
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+	float TiempoDisparo;
 	//Establecemos a la Nave Nodriza
 	virtual void SetNaveNodriza(class ANaveNodriza* NaveNodriza) = 0;
-	//Establecemos diferentes estados
-	virtual void EstadoDefensivo() = 0;
-	virtual void EstadoOfensivo() = 0;
-	virtual void EstadoDebil() = 0;
 
-	virtual FString GetEstado() = 0;
+	//Funciones que compartiran con los estados y la nave nodriza
+	virtual void Mover(float DeltaTime) = 0;
+	virtual void Disparar() = 0;
+	virtual void CrearEscudo() = 0;
 };
