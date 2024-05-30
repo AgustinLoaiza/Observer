@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Observer.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A52B41BB-0CFB-4656-A91F-75FF5C1C657D}</UniqueIdentifier>
+      <UniqueIdentifier>{33071A22-8FFD-41BB-BFD0-BB504F457F16}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Observer.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{352F8255-980B-479E-A71F-7431FAEB0977}</UniqueIdentifier>
+      <UniqueIdentifier>{80CA186D-5B1F-437B-94D4-0C6A2A39120D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Observer">
-      <UniqueIdentifier>{D83085CC-5215-4B44-82EB-2A7E47560E93}</UniqueIdentifier>
+      <UniqueIdentifier>{D001A083-0E1F-419A-A7C8-11358FA6F29A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Observer\BalaMortero.cpp">
       <Filter>Source\Observer</Filter>
@@ -68,6 +68,30 @@
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\EstadosNaveNodriza.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\Estrategia.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\Estrategia.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\EstrategiaLigera.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\EstrategiaLigera.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\EstrategiaMultiple.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\EstrategiaMultiple.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\EstrategiaPesada.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\EstrategiaPesada.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Observer\NaceCaza.cpp">
