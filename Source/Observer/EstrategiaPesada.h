@@ -36,9 +36,9 @@ public:
 	FTimerHandle TimerHandle_ShotTimerExpired;
 
 	float TiempoDisparo;
-
+	class AObserverProjectile* Proyectil;
 	class AObserverPawn* Pawn;
-	void Disparar() override;
+	void Disparar(class AObserverPawn* _Pawn, FVector FireDirection) override;
 	void ShotTimerExpired();
 
 };

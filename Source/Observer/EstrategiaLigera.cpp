@@ -30,9 +30,10 @@ void AEstrategiaLigera::Tick(float DeltaTime)
 
 }
 
-void AEstrategiaLigera::Disparar()
+void AEstrategiaLigera::Disparar(AObserverPawn* _Pawn, FVector FireDirection) 
 {
-	FVector FireDirection = Pawn->GetActorForwardVector(); 
+	Pawn=Cast<AObserverPawn>(_Pawn);
+	//FVector FireDirection = Pawn->GetActorForwardVector(); 
 	// If it's ok to fire again
 	if (bCanFire == true)
 	{

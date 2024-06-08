@@ -3,7 +3,7 @@
 
 #include "EstrategiaPesada.h"
 #include "ObserverPawn.h"
-#include "BalaMortero.h"
+#include "ObserverProjectile.h"
 
 // Sets default values
 AEstrategiaPesada::AEstrategiaPesada()
@@ -12,7 +12,9 @@ AEstrategiaPesada::AEstrategiaPesada()
 	PrimaryActorTick.bCanEverTick = true;
 	bCanFire = true; // Permitir disparos al principio
 
-	TiempoDisparo = 4.0f; 
+	TiempoDisparo = 2.0f; 
+	GunOffset = FVector(90.f, 0.f, 0.f); 
+	bCanFire = true; 
 }
 
 // Called when the game starts or when spawned
@@ -29,9 +31,9 @@ void AEstrategiaPesada::Tick(float DeltaTime)
 
 }
 
-void AEstrategiaPesada::Disparar()
+void AEstrategiaPesada::Disparar(AObserverPawn* _Pawn, FVector FireDirection)
 {
-	FVector FireDirection = Pawn->GetActorForwardVector();
+	Pawn = Cast<AObserverPawn>(_Pawn); 
 	// If it's ok to fire again
 	if (bCanFire == true)
 	{
@@ -46,11 +48,13 @@ void AEstrategiaPesada::Disparar()
 			if (World != nullptr)
 			{
 				// spawn the projectile
-				World->SpawnActor<ABalaMortero>(SpawnLocation, FireRotation);
+				Proyectil= World->SpawnActor<AObserverProjectile>(SpawnLocation, FireRotation);
+				Proyectil->SetActorScale3D(FVector(3.0f, 3.0f, 3.0f)); 
 			}
 
 			bCanFire = false;
 			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &AEstrategiaPesada::ShotTimerExpired, TiempoDisparo);
+
 
 			bCanFire = false;
 		}

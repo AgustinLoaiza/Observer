@@ -12,6 +12,10 @@
 #include "Engine/StaticMesh.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
+#include "NaveEnemiga.h"
+#include "EstrategiaLigera.h"
+#include "EstrategiaPesada.h"
+#include "EstrategiaMultiple.h"
 
 const FName AObserverPawn::MoveForwardBinding("MoveForward");
 const FName AObserverPawn::MoveRightBinding("MoveRight");
@@ -50,6 +54,7 @@ AObserverPawn::AObserverPawn()
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 0.1f;
 	bCanFire = true;
+ 
 }
 
 void AObserverPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -96,44 +101,90 @@ void AObserverPawn::Tick(float DeltaSeconds)
 	const FVector FireDirection = FVector(FireForwardValue, FireRightValue, 0.f);
 
 	// Try and fire a shot
-	FireShot(FireDirection);
+	//FireShot(FireDirection);
+	DeteccionNavesEnemigas(); 
+	Estrategia->Disparar(this, FireDirection);  
 }
 
-void AObserverPawn::FireShot(FVector FireDirection)
+void AObserverPawn::BeginPlay()
 {
-	// If it's ok to fire again
-	if (bCanFire == true)
+	Super::BeginPlay();
+	//Inicializar el TArray de Naves Enemigas
+	NavesEnemigas = TArray<AActor*>();  
+	EstrategiaLigera = GetWorld()->SpawnActor<AEstrategiaLigera>(FVector::ZeroVector, FRotator::ZeroRotator); 
+	EstrategiaPesada = GetWorld()->SpawnActor<AEstrategiaPesada>(FVector::ZeroVector, FRotator::ZeroRotator); 
+	EstrategiaMultiple = GetWorld()->SpawnActor<AEstrategiaMultiple>(FVector::ZeroVector, FRotator::ZeroRotator);
+	AlternarEstrategia(EstrategiaMultiple);
+	DeteccionNavesEnemigas(); 
+}
+
+void AObserverPawn::DeteccionNavesEnemigas()
+{ 
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ANaveEnemiga::StaticClass(), NavesEnemigas);  
+	/*for (AActor* NaveEnemiga : NavesEnemigas)
 	{
-		// If we are pressing fire stick in a direction
-		if (FireDirection.SizeSquared() > 0.0f)
-		{
-			const FRotator FireRotation = FireDirection.Rotation();
-			// Spawn projectile at an offset from this pawn
-			const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
-
-			UWorld* const World = GetWorld();
-			if (World != nullptr)
-			{
-				// spawn the projectile
-				World->SpawnActor<AObserverProjectile>(SpawnLocation, FireRotation);
-			}
-
-			bCanFire = false;
-			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &AObserverPawn::ShotTimerExpired, FireRate);
-
-			// try and play the sound if specified
-			if (FireSound != nullptr)
-			{
-				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-			}
-
-			bCanFire = false;
-		}
+		UE_LOG(LogTemp, Warning, TEXT("Nave Enemiga: %s"), *NaveEnemiga->GetName());
+	}*/
+	if (NavesEnemigas.Num()==9)
+	{
+		AlternarEstrategia(EstrategiaMultiple);
 	}
+	else if (NavesEnemigas.Num()>1 && NavesEnemigas.Num() < 5)
+	{
+		AlternarEstrategia(EstrategiaLigera);
+	}
+	else if (NavesEnemigas.Num()<=0)
+	{
+		AlternarEstrategia(EstrategiaPesada);
+	}
+
 }
 
-void AObserverPawn::ShotTimerExpired()
+void AObserverPawn::AlternarEstrategia(IEstrategia* _Estrategia)
 {
-	bCanFire = true;
+	Estrategia=Cast<IEstrategia>(_Estrategia);
 }
+
+//void AObserverPawn::EntrarEnBatalla()
+//{
+//	//Estrategia->Disparar(this, FireDirection);
+//}
+
+//void AObserverPawn::FireShot(FVector FireDirection)
+//{
+//	// If it's ok to fire again
+//	if (bCanFire == true)
+//	{
+//		// If we are pressing fire stick in a direction
+//		if (FireDirection.SizeSquared() > 0.0f)
+//		{
+//			const FRotator FireRotation = FireDirection.Rotation();
+//			// Spawn projectile at an offset from this pawn
+//			const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
+//
+//			UWorld* const World = GetWorld();
+//			if (World != nullptr)
+//			{
+//				// spawn the projectile
+//				World->SpawnActor<AObserverProjectile>(SpawnLocation, FireRotation);
+//			}
+//
+//			bCanFire = false;
+//			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &AObserverPawn::ShotTimerExpired, FireRate);
+//
+//			// try and play the sound if specified
+//			if (FireSound != nullptr)
+//			{
+//				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+//			}
+//
+//			bCanFire = false;
+//		}
+//	}
+//}
+//
+//void AObserverPawn::ShotTimerExpired()
+//{
+//	bCanFire = true;
+//}
 

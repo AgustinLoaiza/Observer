@@ -92,7 +92,6 @@ void ANaceCaza::ShotTimerExpired()
 
 void ANaceCaza::RecibirDanio()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("NaveCaza::RecibirDanio"));
 	Vida -= 5;
 	if (Vida <= 0)
 	{
@@ -102,5 +101,5 @@ void ANaceCaza::RecibirDanio()
 
 void ANaceCaza::Curarse()
 {
-	Vida = 100;
+	//Vida = 100;
 }

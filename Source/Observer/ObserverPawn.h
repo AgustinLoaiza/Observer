@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Estrategia.h"
 #include "ObserverPawn.generated.h"
 
 UCLASS(Blueprintable)
@@ -48,10 +49,10 @@ public:
 	// End Actor Interface
 
 	/* Fire a shot in the specified direction */
-	void FireShot(FVector FireDirection);
+	//void FireShot(FVector FireDirection);
 
 	/* Handler for the fire timer expiry */
-	void ShotTimerExpired();
+	//void ShotTimerExpired();
 
 	// Static names for axis bindings
 	static const FName MoveForwardBinding;
@@ -74,5 +75,20 @@ public:
 	FORCEINLINE class UCameraComponent* GetCameraComponent() const { return CameraComponent; }
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+
+public:
+	//Creamos una funcion BeginPlay
+	virtual void BeginPlay() override;
+	// Estrategias
+	class IEstrategia* Estrategia;
+	class AEstrategiaLigera* EstrategiaLigera;
+	class AEstrategiaPesada* EstrategiaPesada;
+	class AEstrategiaMultiple* EstrategiaMultiple;
+
+	void DeteccionNavesEnemigas();
+	void AlternarEstrategia(class IEstrategia* _Estrategia);
+
+	// Naves enemigas
+	TArray<class AActor*> NavesEnemigas; 
 };
 

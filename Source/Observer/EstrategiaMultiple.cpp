@@ -29,9 +29,10 @@ void AEstrategiaMultiple::Tick(float DeltaTime)
 
 }
 
-void AEstrategiaMultiple::Disparar()
+void AEstrategiaMultiple::Disparar(AObserverPawn* _Pawn, FVector FireDirection)
 {
-	FVector FireDirection = Pawn->GetActorForwardVector();
+	Pawn = Cast<AObserverPawn>(_Pawn);
+	//FVector FireDirection = Pawn->GetActorForwardVector();
 	// If it's ok to fire again
 	if (bCanFire == true)
 	{
@@ -59,7 +60,6 @@ void AEstrategiaMultiple::Disparar()
 
 			bCanFire = false;
 			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &AEstrategiaMultiple::ShotTimerExpired, FireRate);
-
 
 			bCanFire = false;
 		}

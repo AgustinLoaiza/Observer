@@ -96,5 +96,5 @@ void ANaveTanque::RecibirDanio()
 
 void ANaveTanque::Curarse()
 {
-	Vida = 150;
+	//Vida = 150;
 }

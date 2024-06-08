@@ -53,10 +53,10 @@ void AObserverGameMode::BeginPlay()
 
 	// Nave Nodriza Aplicando el patron Stade
 	// Generar Nave Nodriza
-	ubicacionInicialNaveNodriza = FVector(1000.0f, 0.0f, 215.0f);
+	/*ubicacionInicialNaveNodriza = FVector(1000.0f, 0.0f, 215.0f);
 	NaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>(ubicacionInicialNaveNodriza, FRotator::ZeroRotator);
 
-	NaveNodriza->InicializarEstadosNaveNodriza(); 
+	NaveNodriza->InicializarEstadosNaveNodriza();*/ 
 }
 
 void AObserverGameMode::Tick(float DeltaTime)

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
+#include "ObserverPawn.h"
 #include "Estrategia.generated.h"
 
 // This class does not need to be modified.
@@ -22,5 +23,5 @@ class OBSERVER_API IEstrategia
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-	virtual void Disparar() = 0;
+	virtual void Disparar(class AObserverPawn* _Pawn, FVector FireDirection) = 0;
 };
