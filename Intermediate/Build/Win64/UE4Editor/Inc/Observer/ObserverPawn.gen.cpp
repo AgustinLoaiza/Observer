@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeObserverPawn() {}
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
+	OBSERVER_API UClass* Z_Construct_UClass_UOriginador_NoRegister();
 // End Cross Module References
 	void AObserverPawn::StaticRegisterNativesAObserverPawn()
 	{
@@ -65,6 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeObserverPawn() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireSound;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -159,6 +161,9 @@ void EmptyLinkFunctionForGeneratedCodeObserverPawn() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObserverPawn_Statics::NewProp_MoveSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AObserverPawn_Statics::NewProp_FireSound,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AObserverPawn_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UOriginador_NoRegister, (int32)VTABLE_OFFSET(AObserverPawn, IOriginador), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AObserverPawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AObserverPawn>::IsAbstract,
 	};
@@ -169,11 +174,11 @@ void EmptyLinkFunctionForGeneratedCodeObserverPawn() {}
 		DependentSingletons,
 		nullptr,
 		Z_Construct_UClass_AObserverPawn_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_AObserverPawn_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x008000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AObserverPawn_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AObserverPawn_Statics::Class_MetaDataParams))
 	};
@@ -186,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeObserverPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AObserverPawn, 3185401062);
+	IMPLEMENT_CLASS(AObserverPawn, 4132125428);
 	template<> OBSERVER_API UClass* StaticClass<AObserverPawn>()
 	{
 		return AObserverPawn::StaticClass();

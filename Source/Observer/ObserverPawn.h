@@ -5,10 +5,11 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Estrategia.h"
+#include "Originador.h"
 #include "ObserverPawn.generated.h"
 
 UCLASS(Blueprintable)
-class AObserverPawn : public APawn
+class AObserverPawn : public APawn, public IOriginador
 {
 	GENERATED_BODY()
 
@@ -90,5 +91,15 @@ public:
 
 	// Naves enemigas
 	TArray<class AActor*> NavesEnemigas; 
+
+public:
+	//Memento
+	void GuardarEstado(IMemento* Memento) const override;
+	void EstablecesVidas(int _Vidas);
+	int ObtenerVidas() const;
+
+private:
+	int Vidas;
+
 };
 

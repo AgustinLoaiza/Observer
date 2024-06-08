@@ -16,6 +16,7 @@
 #include "EstrategiaLigera.h"
 #include "EstrategiaPesada.h"
 #include "EstrategiaMultiple.h"
+#include "MementoVivere.h"
 
 const FName AObserverPawn::MoveForwardBinding("MoveForward");
 const FName AObserverPawn::MoveRightBinding("MoveRight");
@@ -54,6 +55,8 @@ AObserverPawn::AObserverPawn()
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 0.1f;
 	bCanFire = true;
+
+	Vidas = 3;
  
 }
 
@@ -121,10 +124,7 @@ void AObserverPawn::BeginPlay()
 void AObserverPawn::DeteccionNavesEnemigas()
 { 
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ANaveEnemiga::StaticClass(), NavesEnemigas);  
-	/*for (AActor* NaveEnemiga : NavesEnemigas)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Nave Enemiga: %s"), *NaveEnemiga->GetName());
-	}*/
+
 	if (NavesEnemigas.Num()==9)
 	{
 		AlternarEstrategia(EstrategiaMultiple);
@@ -143,6 +143,26 @@ void AObserverPawn::DeteccionNavesEnemigas()
 void AObserverPawn::AlternarEstrategia(IEstrategia* _Estrategia)
 {
 	Estrategia=Cast<IEstrategia>(_Estrategia);
+}
+
+//Inicializacion de las funciones del memento
+void AObserverPawn::GuardarEstado(IMemento* Memento) const
+{
+	AMementoVivere* MementoVivere=Cast<AMementoVivere>(Memento);
+	if (MementoVivere)
+	{
+		MementoVivere->Vidas=Vidas;
+	}
+}
+
+void AObserverPawn::EstablecesVidas(int _Vidas)
+{
+	Vidas=_Vidas;
+}
+
+int AObserverPawn::ObtenerVidas() const
+{
+	return Vidas;
 }
 
 //void AObserverPawn::EntrarEnBatalla()
