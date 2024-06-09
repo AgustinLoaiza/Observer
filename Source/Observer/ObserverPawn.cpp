@@ -57,6 +57,8 @@ AObserverPawn::AObserverPawn()
 	bCanFire = true;
 
 	Vidas = 3;
+	Energia = 100;
+	//PosicionMuerte = GetActorLocation();
  
 }
 
@@ -107,20 +109,43 @@ void AObserverPawn::Tick(float DeltaSeconds)
 	//FireShot(FireDirection);
 	DeteccionNavesEnemigas(); 
 	Estrategia->Disparar(this, FireDirection);  
+
+	if (Energia <= 0)
+	{
+		Vidas--;
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Vida: " + FString::FromInt(Vidas)));
+		Energia = 100;
+		//cargador = 50;
+		MoveSpeed = 1000.0f;
+	}
+	if (Vidas <= 0)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Has muerto"));
+		if (MementoVivere==nullptr)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("No existe el Memento"));
+			return;
+		}
+		MementoVivere->PosicionMuerte = GetActorLocation(); 
+		Destroy();
+	}
 }
 
 void AObserverPawn::BeginPlay()
 {
 	Super::BeginPlay();
 	//Inicializar el TArray de Naves Enemigas
-	NavesEnemigas = TArray<AActor*>();  
+	NavesEnemigas = TArray<AActor*>(); 
+	//Inicializar las estrategias
 	EstrategiaLigera = GetWorld()->SpawnActor<AEstrategiaLigera>(FVector::ZeroVector, FRotator::ZeroRotator); 
 	EstrategiaPesada = GetWorld()->SpawnActor<AEstrategiaPesada>(FVector::ZeroVector, FRotator::ZeroRotator); 
 	EstrategiaMultiple = GetWorld()->SpawnActor<AEstrategiaMultiple>(FVector::ZeroVector, FRotator::ZeroRotator);
 	AlternarEstrategia(EstrategiaMultiple);
-	DeteccionNavesEnemigas(); 
+	DeteccionNavesEnemigas();
+	PosicionMuerte = GetActorLocation();
 }
 
+//Funcion que detecta la cantidad de naves enemigas para saber en que momento cambiará la estrategia
 void AObserverPawn::DeteccionNavesEnemigas()
 { 
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ANaveEnemiga::StaticClass(), NavesEnemigas);  
@@ -146,23 +171,43 @@ void AObserverPawn::AlternarEstrategia(IEstrategia* _Estrategia)
 }
 
 //Inicializacion de las funciones del memento
-void AObserverPawn::GuardarEstado(IMemento* Memento) const
+void AObserverPawn::GuardarEstado(IMemento* Memento)
 {
-	AMementoVivere* MementoVivere=Cast<AMementoVivere>(Memento);
+	MementoVivere=Cast<AMementoVivere>(Memento);
 	if (MementoVivere)
 	{
-		MementoVivere->Vidas=Vidas;
+		MementoVivere->PosicionMuerte=PosicionMuerte;  
 	}
 }
 
-void AObserverPawn::EstablecesVidas(int _Vidas)
+void AObserverPawn::SetVidas(int _Vidas)
 {
 	Vidas=_Vidas;
+}
+
+void AObserverPawn::SetEnergia(int _Energia)
+{
+	Energia=_Energia;
+}
+
+void AObserverPawn::SetPosicionMuerte(FVector _PosicionMuerte)
+{	
+	PosicionMuerte=_PosicionMuerte;
 }
 
 int AObserverPawn::ObtenerVidas() const
 {
 	return Vidas;
+}
+
+int AObserverPawn::ObtenerEnergia() const
+{
+	return Energia;
+}
+
+FVector AObserverPawn::ObtenerPosicionMuerte() const
+{
+	return PosicionMuerte;
 }
 
 //void AObserverPawn::EntrarEnBatalla()

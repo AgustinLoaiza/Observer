@@ -2,16 +2,20 @@
 
 #include "ObserverGameMode.h"
 #include "ObserverPawn.h"
+#include "Kismet/GameplayStatics.h"
 #include "Radar.h"
 #include "NaceCaza.h"
 #include "NaveFugaz.h"
 #include "NaveTanque.h"
 #include "NaveNodriza.h"
+#include "Cuidador.h"
+#include "MyPlayerController.h"
 
 AObserverGameMode::AObserverGameMode()
 {
 	// set default pawn class to our character class
 	DefaultPawnClass = AObserverPawn::StaticClass();
+	PlayerControllerClass = AMyPlayerController::StaticClass();
 	PrimaryActorTick.bCanEverTick = true;
 	VidaPromedio = 0;
 }
@@ -57,6 +61,13 @@ void AObserverGameMode::BeginPlay()
 	NaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>(ubicacionInicialNaveNodriza, FRotator::ZeroRotator);
 
 	NaveNodriza->InicializarEstadosNaveNodriza();*/ 
+
+	// Memento
+	Pawn = Cast<AObserverPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0)); 
+	Cuidador = GetWorld()->SpawnActor<ACuidador>(ACuidador::StaticClass());
+	GuardarJuego();  
+	
+
 }
 
 void AObserverGameMode::Tick(float DeltaTime)
@@ -74,6 +85,36 @@ void AObserverGameMode::Tick(float DeltaTime)
 		{
 			VidaPromedio = 0;
 		}
+	}
+	Temporizador1 += DeltaTime;
+	
+	if (Temporizador1>=3.0f)
+	{
+		if (Pawn->IsPendingKill())
+		{
+			CargarJuego(); 
+			Pawn = Cast<AObserverPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+			GuardarJuego(); 
+		}
+		Temporizador1 = 0.0f;
+		
+	}
+}
+
+void AObserverGameMode::GuardarJuego()
+{
+	
+	if (Cuidador && Pawn)
+	{
+		Cuidador->Guardar(Pawn);
+	}
+}
+
+void AObserverGameMode::CargarJuego()
+{
+	if (Cuidador && Pawn)
+	{
+		Cuidador->Cargar(Pawn);
 	}
 }
 

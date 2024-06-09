@@ -36,7 +36,7 @@ void ACuidador::Guardar(AObserverPawn* _Pawn)
 			MementoVivere->ConditionalBeginDestroy(); // Lo que hace este metodo es limpiar la memoria anterior, es una forma de administrar de mejor manera la memoria
 		}
 		MementoVivere = GetWorld()->SpawnActor<AMementoVivere>(AMementoVivere::StaticClass());
-		//_Pawn->GuardarEstado(MementoVivere);
+		_Pawn->GuardarEstado(MementoVivere);
 	}
 }
 
@@ -44,7 +44,7 @@ void ACuidador::Cargar(AObserverPawn* _Pawn)
 {
 	if (_Pawn && MementoVivere)
 	{
-		//MementoVivere->RestaurarEstado(_Pawn);
+		MementoVivere->RestaurarEstado();
 	}
 }
 

@@ -22,5 +22,6 @@ class OBSERVER_API IOriginador
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-	virtual void GuardarEstado(class IMemento* Memento) const = 0;
+	virtual void GuardarEstado(class IMemento* Memento) = 0;
+	virtual void SetPosicionMuerte(FVector _PosicionMuerte) = 0; 
 };

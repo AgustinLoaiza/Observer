@@ -94,12 +94,20 @@ public:
 
 public:
 	//Memento
-	void GuardarEstado(IMemento* Memento) const override;
-	void EstablecesVidas(int _Vidas);
+	void GuardarEstado(class IMemento* Memento) override;
+	void SetVidas(int _Vidas);
+	void SetEnergia(int _Energia);
+	void SetPosicionMuerte(FVector _PosicionMuerte);
 	int ObtenerVidas() const;
+	int ObtenerEnergia() const;
+	FVector ObtenerPosicionMuerte() const;
 
+	int Energia;
+	class AMementoVivere* MementoVivere;
 private:
 	int Vidas;
+	
+	FVector PosicionMuerte;
 
 };
 

@@ -3,6 +3,9 @@
 
 #include "MementoVivere.h"
 #include "Originador.h"
+#include "ObserverPawn.h"
+#include "Kismet/GameplayStatics.h"
+#include "MyPlayerController.h"
 
 // Sets default values
 AMementoVivere::AMementoVivere()
@@ -26,12 +29,17 @@ void AMementoVivere::Tick(float DeltaTime)
 
 }
 
-void AMementoVivere::RestaurarEstado(IOriginador* _originador)
+void AMementoVivere::RestaurarEstado()
 {
-	Originador=Cast<IOriginador>(_originador);
-	if (Originador)
+	AObserverPawn* JugadorEnMundoP = Cast<AObserverPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+	if (JugadorEnMundoP)
 	{
-		Originador->GuardarEstado(this);
+		JugadorEnMundoP->Destroy(); 
 	}
+	AObserverPawn* JugadorEnMundo = GetWorld()->SpawnActor<AObserverPawn>(AObserverPawn::StaticClass(), PosicionMuerte, FRotator::ZeroRotator);
+	AMyPlayerController* JugadorController = Cast<AMyPlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+
+	JugadorController->Possess(JugadorEnMundo);
+	
 }
 

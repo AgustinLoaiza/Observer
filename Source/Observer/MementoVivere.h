@@ -29,9 +29,9 @@ public:
 	int Energia;
 	FVector PosicionMuerte;
 
-	void RestaurarEstado(class IOriginador* _originador) override;
+	void RestaurarEstado() override;
 
 protected:
-	IOriginador* Originador;
+	class AObserverPawn* Pawn;
 
 };

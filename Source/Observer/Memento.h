@@ -22,5 +22,5 @@ class OBSERVER_API IMemento
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-	virtual void RestaurarEstado(class IOriginador* _originador) = 0;
+	virtual void RestaurarEstado() = 0;
 };

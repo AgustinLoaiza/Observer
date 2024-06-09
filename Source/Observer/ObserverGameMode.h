@@ -21,6 +21,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 public:
+	//Observer
 	TArray<class ANaveEnemiga*> Naves; 
 	class ARadar* Radar;
 	class ANaceCaza* NaveCaza;
@@ -33,9 +34,20 @@ public:
 
 	float VidaPromedio;
 
+	//Memento
+	class AObserverPawn* Pawn;
+
+	class ACuidador* Cuidador;
+
 public:
 	FVector ubicacionInicialNaveNodriza;
 	class ANaveNodriza* NaveNodriza;
+
+	void GuardarJuego();
+	void CargarJuego();
+
+	float Temporizador1;
+
 };
 
 
