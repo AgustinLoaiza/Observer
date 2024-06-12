@@ -45,16 +45,16 @@ void AEstrategiaMultiple::Disparar(AObserverPawn* _Pawn, FVector FireDirection)
 
 			UWorld* const World = GetWorld();
 			if (World != nullptr)
-			{
+			{ 
 				// spawn the projectile
 				World->SpawnActor<AObserverProjectile>(SpawnLocation, FireRotation);
 
-				const FRotator FireRotation2 = FireDirection.Rotation() + FRotator(10.0f, 30.0f, 0.0f);
-				const FRotator FireRotation3 = FireDirection.Rotation() + FRotator(10.0f, -30.0f, 0.0f);
-				const FVector SpawnLocation2 = Pawn->GetActorLocation() + FVector(10.0f, 30.0f, 0.0f) + FireRotation2.RotateVector(GunOffset);
-				const FVector SpawnLocation3 = Pawn->GetActorLocation() + FVector(10.0f, -30.0f, 0.0f) + FireRotation3.RotateVector(GunOffset);
-				World->SpawnActor<AObserverProjectile>(SpawnLocation2, FireRotation2);
-				World->SpawnActor<AObserverProjectile>(SpawnLocation3, FireRotation3);
+				const FRotator FireRotation2 = FireDirection.Rotation() + FRotator(10.0f, 30.0f, 0.0f); 
+				const FRotator FireRotation3 = FireDirection.Rotation() + FRotator(10.0f, -30.0f, 0.0f); 
+				const FVector SpawnLocation2 = Pawn->GetActorLocation() + FVector(10.0f, 30.0f, 0.0f) + FireRotation2.RotateVector(GunOffset); 
+				const FVector SpawnLocation3 = Pawn->GetActorLocation() + FVector(10.0f, -30.0f, 0.0f) + FireRotation3.RotateVector(GunOffset); 
+				World->SpawnActor<AObserverProjectile>(SpawnLocation2, FireRotation2); 
+				World->SpawnActor<AObserverProjectile>(SpawnLocation3, FireRotation3);  
 				
 			}
 

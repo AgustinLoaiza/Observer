@@ -56,8 +56,8 @@ AObserverPawn::AObserverPawn()
 	FireRate = 0.1f;
 	bCanFire = true;
 
-	Vidas = 3;
-	Energia = 100;
+	Vidas = 1;
+	Energia = 30;
 	//PosicionMuerte = GetActorLocation();
  
 }

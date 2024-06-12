@@ -37,5 +37,7 @@ public:
 	void Disparar(FVector FireDirection) override;
 	void RecibirDanio() override;
 	void Curarse() override;
+
+	FString FabricarNave = "NaveFugaz";
 	
 };

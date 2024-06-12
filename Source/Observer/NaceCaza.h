@@ -39,4 +39,6 @@ public:
 	void RecibirDanio() override;
 	void Curarse() override;
 
+	FString FabricarNave = "NaveCaza";
+
 };
