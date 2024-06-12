@@ -1,0 +1,113 @@
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Development\Observer\Definitions.Observer.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/BalaMortero.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\BalaMortero.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\BalaMortero.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ObserverProjectile.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaceCaza.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveEnemiga.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Suscriptora.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Suscriptora.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Socorro.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Socorro.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveEnemiga.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaceCaza.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveFugaz.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveFugaz.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveTanque.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveTanque.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverProjectile.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ObserverPawn.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Estrategia.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Estrategia.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Originador.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Originador.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverPawn.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Cuidador.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Cuidador.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Cuidador.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\MementoVivere.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Memento.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Memento.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MementoVivere.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Escudo.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Escudo.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Escudo.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstadoDebil.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstadoDebil.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstadosNaveNodriza.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstadosNaveNodriza.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstadoDebil.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveNodriza.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveNodriza.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstadoDefensivo.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstadoDefensivo.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstadoDefensivo.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstadoOfensivo.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstadoOfensivo.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstadoOfensivo.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstadosNaveNodriza.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Estrategia.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstrategiaLigera.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstrategiaLigera.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstrategiaLigera.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstrategiaMultiple.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstrategiaMultiple.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstrategiaMultiple.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstrategiaPesada.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstrategiaPesada.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstrategiaPesada.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/FabricaDeNaves.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeNaves.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeNaves.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Memento.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/MementoVivere.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\MyPlayerController.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MyPlayerController.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/MyPlayerController.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaceCaza.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveEnemiga.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Radar.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Publicador.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Publicador.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Radar.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ObserverGameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverGameMode.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveFugaz.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveNodriza.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveTanque.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Observer.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Observer.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverPawn.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverProjectile.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Originador.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Publicador.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Radar.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Socorro.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Suscriptora.cpp

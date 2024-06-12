@@ -34,9 +34,9 @@ void AObserverGameMode::BeginPlay()
 	// Generar Naves Fugaces en las esquinas
 	for (int i = 0; i < 2; i++) {
 		FVector PosicionNaveActual = FVector(ubicacionInicialNavesFugaces.X, ubicacionInicialNavesFugaces.Y + i * 1200, ubicacionInicialNavesFugaces.Z);
-		ANaveEnemiga* NuevaNaveFugaz = AFabricaDeNaves::FabricarNave("NaveFugaz", GetWorld(), PosicionNaveActual, FRotator::ZeroRotator);
+		ANaveEnemiga* NuevaNaveFugaz = AFabricaDeNaves::FabricarNave("NaveFugaz", GetWorld(), PosicionNaveActual, FRotator::ZeroRotator); 
 		//NaveFugaz = GetWorld()->SpawnActor<ANaveFugaz>(PosicionNaveActual, FRotator::ZeroRotator);
-		NuevaNaveFugaz->EstablecerRadar(Radar); 
+		NuevaNaveFugaz->EstablecerRadar(Radar);  
 		//NaveFugaz->EstablecerRadar(Radar);
 		Naves.Add(NuevaNaveFugaz);
 	}
