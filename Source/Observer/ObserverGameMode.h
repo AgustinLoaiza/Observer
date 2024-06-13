@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "ComponenteBoqueron.h"
 #include "ObserverGameMode.generated.h"
 
 UCLASS(MinimalAPI)
@@ -22,8 +23,9 @@ public:
 
 public:
 	//Builder
-	class AIngeniero* Ingeniero;
-	class AHansKundt* HansKundt;
+	UComponenteBoqueron* ComponenteBoqueron; 
+	//class AIngeniero* Ingeniero;
+	//class AHansKundt* HansKundt;
 
 	//Observer
 	TArray<class ANaveEnemiga*> Naves; 

@@ -14,6 +14,7 @@
 #include "Boqueron.h"
 #include "Ingeniero.h"
 #include "HansKundt.h"
+#include "ComponenteBoqueron.h"
 
 AObserverGameMode::AObserverGameMode()
 {
@@ -22,6 +23,7 @@ AObserverGameMode::AObserverGameMode()
 	PlayerControllerClass = AMyPlayerController::StaticClass(); 
 	PrimaryActorTick.bCanEverTick = true;
 	VidaPromedio = 0;
+	ComponenteBoqueron = CreateDefaultSubobject<UComponenteBoqueron>(TEXT("ComponenteBoqueron")); 
 }
 
 void AObserverGameMode::BeginPlay()
@@ -65,11 +67,11 @@ void AObserverGameMode::BeginPlay()
 	}
 
 	//Builder
-	HansKundt = GetWorld()->SpawnActor<AHansKundt>(AHansKundt::StaticClass()); //StaticCalss quiere decir que esto es una clase de Unreal, si no hay no va a saber de donde esta sacando
-	Ingeniero = GetWorld()->SpawnActor<AIngeniero>(AIngeniero::StaticClass());
-	HansKundt->SetObrero(Ingeniero);
-	HansKundt->ConstruirBoqueron(FVector(300.0f, 500.0f, 215.0f), FRotator(0.0f, 180.0f, 90.0f));
-	ABoqueron* Boqueron = HansKundt->GetBoqueron();
+	//HansKundt = GetWorld()->SpawnActor<AHansKundt>(AHansKundt::StaticClass()); //StaticCalss quiere decir que esto es una clase de Unreal, si no hay no va a saber de donde esta sacando
+	//Ingeniero = GetWorld()->SpawnActor<AIngeniero>(AIngeniero::StaticClass());
+	//HansKundt->SetObrero(Ingeniero);
+	//HansKundt->ConstruirBoqueron(FVector(300.0f, 500.0f, 215.0f), FRotator(0.0f, 180.0f, 90.0f));
+	//ABoqueron* Boqueron = HansKundt->GetBoqueron();
 
 
 	// Nave Nodriza Aplicando el patron Stade

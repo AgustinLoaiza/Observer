@@ -3,6 +3,7 @@
 	{
 		"Module.Observer.cpp.obj": [
 			"BalaMortero.cpp.obj",
+			"Boqueron.cpp.obj",
 			"CapsulaEnergia.cpp.obj",
 			"Capsulas.cpp.obj",
 			"CapsulaVelocidad.cpp.obj",
@@ -22,6 +23,8 @@
 			"EstrategiaMultiple.cpp.obj",
 			"EstrategiaPesada.cpp.obj",
 			"FabricaDeNaves.cpp.obj",
+			"HansKundt.cpp.obj",
+			"Ingeniero.cpp.obj",
 			"Memento.cpp.obj",
 			"MementoVivere.cpp.obj",
 			"MuroEspinas.cpp.obj",
@@ -42,13 +45,12 @@
 			"Socorro.cpp.obj",
 			"Suscriptora.cpp.obj",
 			"TrampaChina.cpp.obj",
-			"Boqueron.cpp.obj",
-			"HansKundt.cpp.obj",
-			"Ingeniero.cpp.obj",
+			"ComponenteBoqueron.cpp.obj",
 			"ObserverGameMode.cpp.obj"
 		],
 		"Module.Observer.gen.cpp.obj": [
 			"BalaMortero.gen.cpp.obj",
+			"Boqueron.gen.cpp.obj",
 			"CapsulaEnergia.gen.cpp.obj",
 			"Capsulas.gen.cpp.obj",
 			"CapsulaVelocidad.gen.cpp.obj",
@@ -69,6 +71,7 @@
 			"EstrategiaPesada.gen.cpp.obj",
 			"FabricaDeNaves.gen.cpp.obj",
 			"HansKundt.gen.cpp.obj",
+			"Ingeniero.gen.cpp.obj",
 			"Memento.gen.cpp.obj",
 			"MementoVivere.gen.cpp.obj",
 			"MuroEspinas.gen.cpp.obj",
@@ -89,8 +92,7 @@
 			"Socorro.gen.cpp.obj",
 			"Suscriptora.gen.cpp.obj",
 			"TrampaChina.gen.cpp.obj",
-			"Boqueron.gen.cpp.obj",
-			"Ingeniero.gen.cpp.obj",
+			"ComponenteBoqueron.gen.cpp.obj",
 			"Observer.init.gen.cpp.obj"
 		]
 	}

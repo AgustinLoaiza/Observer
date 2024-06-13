@@ -4,6 +4,11 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UOb
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/BalaMortero.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\BalaMortero.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Boqueron.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/Boqueron.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\PlanosDeAsedio.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\PlanosDeAsedio.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Boqueron.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/CapsulaEnergia.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/CapsulaEnergia.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Capsulas.h
@@ -86,6 +91,9 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer/HansKundt.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obrero.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obrero.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\HansKundt.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Ingeniero.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/Ingeniero.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Ingeniero.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Memento.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/Memento.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Memento.generated.h
@@ -118,6 +126,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteBoqueron.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteBoqueron.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverGameMode.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ObserverPawn.gen.cpp
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ObserverProjectile.gen.cpp
@@ -125,8 +135,6 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer/ObserverProjectile.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverProjectile.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Originador.gen.cpp
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/PlanosDeAsedio.gen.cpp
-C:\Users\User\Desktop\Observer\Observer\Source\Observer/PlanosDeAsedio.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\PlanosDeAsedio.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Publicador.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/Publicador.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Publicador.generated.h
