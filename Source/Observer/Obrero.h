@@ -27,5 +27,6 @@ public:
 	virtual void BuildDisparador() = 0;
 	virtual void BuildEscudo() = 0;
 	virtual void BuildMuroEspinas() = 0;
+	virtual void BuildTrampaChina() = 0;
 	virtual class ABoqueron* GetBoqueron() = 0;
 };

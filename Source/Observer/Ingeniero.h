@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Obrero.h"
 #include "Ingeniero.generated.h"
 
 UCLASS()
-class OBSERVER_API AIngeniero : public AActor
+class OBSERVER_API AIngeniero : public AActor, public IObrero
 {
 	GENERATED_BODY()
 	
@@ -23,4 +24,14 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+public:
+	virtual void BuildBoqueron(FVector UbicacionBoqueron, FRotator Rotacion) override;
+	virtual void BuildMesh() override;
+	virtual void BuildDisparador() override;
+	virtual void BuildEscudo() override;
+	virtual void BuildMuroEspinas() override;
+	virtual void BuildTrampaChina() override;
+	class UStaticMesh* SuperBoqueron = LoadObject<UStaticMesh>(nullptr, TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	virtual class ABoqueron* GetBoqueron() override;
+	ABoqueron* Boqueron;
 };

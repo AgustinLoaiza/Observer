@@ -26,4 +26,5 @@ public:
 	virtual void SetDisparador(FString Disparador) = 0;
 	virtual void SetEscudo(FString Escudo) = 0;
 	virtual void SetMuroEspinas(FString MuroEspinas) = 0; 
+	virtual void SetTrampaChina(FString TrampaChina) = 0;
 };

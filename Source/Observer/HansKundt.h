@@ -4,7 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Obrero.h"
 #include "HansKundt.generated.h"
+
+class IObrero;
 
 UCLASS()
 class OBSERVER_API AHansKundt : public AActor
@@ -22,5 +25,11 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+public:
+	void ConstruirBoqueron(FVector UbicacionBoqueron, FRotator Rotacion);
+	void SetObrero(AActor* Albaco);
+	class ABoqueron* GetBoqueron();
+	IObrero* Obrero;
 
 };

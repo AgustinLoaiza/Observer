@@ -2,6 +2,11 @@
 
 
 #include "Ingeniero.h"
+#include "Disparador.h"
+#include "Escudo.h"
+#include "MuroEspinas.h"
+#include "TrampaChina.h"
+#include "Boqueron.h"
 
 // Sets default values
 AIngeniero::AIngeniero()
@@ -23,5 +28,43 @@ void AIngeniero::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AIngeniero::BuildBoqueron(FVector UbicacionBoqueron, FRotator Rotacion)
+{
+	Boqueron = GetWorld()->SpawnActor<ABoqueron>(ABoqueron::StaticClass(), UbicacionBoqueron, Rotacion);
+	Boqueron->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+	if (!Boqueron) { UE_LOG(LogTemp, Error, TEXT("Surtidor():Lodging is NULL, make sure it's initialized.")); return; } 
+}
+
+void AIngeniero::BuildMesh()
+{
+	Boqueron->MeshBoqueron->SetStaticMesh(SuperBoqueron);
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("MallaBoqueron"));
+}
+
+void AIngeniero::BuildDisparador()
+{
+	Boqueron->SetDisparador("Disparador");
+}
+
+void AIngeniero::BuildEscudo()
+{
+	Boqueron->SetEscudo("Escudo");
+}
+
+void AIngeniero::BuildMuroEspinas()
+{
+	Boqueron->SetMuroEspinas("MuroEspinas");
+}
+
+void AIngeniero::BuildTrampaChina()
+{
+	Boqueron->SetTrampaChina("TrampaChina");
+}
+
+ABoqueron* AIngeniero::GetBoqueron()
+{
+	return Boqueron;
 }
 

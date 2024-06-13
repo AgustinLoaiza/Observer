@@ -21,6 +21,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 public:
+	//Builder
+	class AIngeniero* Ingeniero;
+	class AHansKundt* HansKundt;
+
 	//Observer
 	TArray<class ANaveEnemiga*> Naves; 
 	class ARadar* Radar;

@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeIngeniero() {}
 	OBSERVER_API UClass* Z_Construct_UClass_AIngeniero();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Observer();
+	OBSERVER_API UClass* Z_Construct_UClass_UObrero_NoRegister();
 // End Cross Module References
 	void AIngeniero::StaticRegisterNativesAIngeniero()
 	{
@@ -31,6 +32,7 @@ void EmptyLinkFunctionForGeneratedCodeIngeniero() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +46,9 @@ void EmptyLinkFunctionForGeneratedCodeIngeniero() {}
 		{ "ModuleRelativePath", "Ingeniero.h" },
 	};
 #endif
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AIngeniero_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UObrero_NoRegister, (int32)VTABLE_OFFSET(AIngeniero, IObrero), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AIngeniero_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AIngeniero>::IsAbstract,
 	};
@@ -54,11 +59,11 @@ void EmptyLinkFunctionForGeneratedCodeIngeniero() {}
 		DependentSingletons,
 		nullptr,
 		nullptr,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AIngeniero_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AIngeniero_Statics::Class_MetaDataParams))
 	};
@@ -71,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeIngeniero() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AIngeniero, 2005785564);
+	IMPLEMENT_CLASS(AIngeniero, 3339424745);
 	template<> OBSERVER_API UClass* StaticClass<AIngeniero>()
 	{
 		return AIngeniero::StaticClass();

@@ -25,3 +25,39 @@ void AHansKundt::Tick(float DeltaTime)
 
 }
 
+void AHansKundt::SetObrero(AActor* Albaco)
+{
+	Obrero = Cast<IObrero>(Albaco);
+
+	if (!Obrero)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("No se puede construir el Fortin"));
+	}
+}
+
+ABoqueron* AHansKundt::GetBoqueron()
+{
+	if (Obrero)
+	{
+		return Obrero->GetBoqueron();
+	}
+
+	UE_LOG(LogTemp, Error, TEXT("GetBoqueron(): Return nullptr"));
+	return nullptr;
+}
+
+void AHansKundt::ConstruirBoqueron(FVector UbicacionBoqueron, FRotator Rotacion)
+{
+	if (!Obrero)
+	{
+		UE_LOG(LogTemp, Error, TEXT("No se puede construir Boqueron"));
+		return;
+	}
+	Obrero->BuildBoqueron(UbicacionBoqueron, Rotacion);
+	Obrero->BuildMesh();
+	Obrero->BuildDisparador();
+	Obrero->BuildEscudo();
+	Obrero->BuildMuroEspinas();
+	Obrero->BuildTrampaChina();
+}
+
