@@ -37,6 +37,9 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Originador.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Originador.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverPawn.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Boqueron.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Boqueron.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Boqueron.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Cuidador.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Cuidador.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Cuidador.generated.h
@@ -78,6 +81,12 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/FabricaDeNaves.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeNaves.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeNaves.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/HansKundt.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\HansKundt.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\HansKundt.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Ingeniero.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Ingeniero.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Ingeniero.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Memento.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MementoVivere.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\MyPlayerController.h
@@ -98,8 +107,12 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveFugaz.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveNodriza.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveTanque.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Obrero.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obrero.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obrero.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Observer.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Observer.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverGameMode.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverPawn.cpp
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
@@ -107,6 +120,9 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverProjectile.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Originador.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/PlanosDeAsedio.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\PlanosDeAsedio.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\PlanosDeAsedio.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Publicador.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Radar.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Socorro.cpp

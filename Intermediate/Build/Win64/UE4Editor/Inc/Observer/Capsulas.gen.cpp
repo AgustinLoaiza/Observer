@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeCapsulas() {}
 // Cross Module References
 	OBSERVER_API UClass* Z_Construct_UClass_ACapsulas_NoRegister();
 	OBSERVER_API UClass* Z_Construct_UClass_ACapsulas();
-	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_AStaticMeshActor();
 	UPackage* Z_Construct_UPackage__Script_Observer();
 // End Cross Module References
 	void ACapsulas::StaticRegisterNativesACapsulas()
@@ -35,13 +35,16 @@ void EmptyLinkFunctionForGeneratedCodeCapsulas() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ACapsulas_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AActor,
+		(UObject* (*)())Z_Construct_UClass_AStaticMeshActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_Observer,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACapsulas_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
+		{ "HideCategories", "Input" },
 		{ "IncludePath", "Capsulas.h" },
 		{ "ModuleRelativePath", "Capsulas.h" },
+		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACapsulas_Statics::StaticCppClassTypeInfo = {
@@ -71,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeCapsulas() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACapsulas, 1485377864);
+	IMPLEMENT_CLASS(ACapsulas, 2734909196);
 	template<> OBSERVER_API UClass* StaticClass<ACapsulas>()
 	{
 		return ACapsulas::StaticClass();
