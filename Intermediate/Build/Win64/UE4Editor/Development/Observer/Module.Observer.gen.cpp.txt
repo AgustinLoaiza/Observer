@@ -7,9 +7,29 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Boqueron.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/Boqueron.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Boqueron.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/CapsulaEnergia.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/CapsulaEnergia.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Capsulas.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Capsulas.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\CapsulaEnergia.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Capsulas.gen.cpp
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/CapsulaVelocidad.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/CapsulaVelocidad.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\CapsulaVelocidad.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/CapsulaVida.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/CapsulaVida.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\CapsulaVida.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ComponenteCapsulas.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/ComponenteCapsulas.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteCapsulas.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Cuidador.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/Cuidador.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Cuidador.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Disparador.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/Disparador.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Disparador.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Escudo.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/Escudo.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Escudo.generated.h
@@ -68,6 +88,9 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/MementoVivere.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/MementoVivere.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MementoVivere.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/MuroEspinas.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/MuroEspinas.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MuroEspinas.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/MyPlayerController.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/MyPlayerController.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MyPlayerController.generated.h

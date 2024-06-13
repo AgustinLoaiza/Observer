@@ -36,7 +36,7 @@ public: \
 
 #define Observer_Source_Observer_CapsulaEnergia_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ACapsulaEnergia(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ACapsulaEnergia(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACapsulaEnergia) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ACapsulaEnergia); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACapsulaEnergia); \
@@ -48,8 +48,6 @@ public:
 
 
 #define Observer_Source_Observer_CapsulaEnergia_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ACapsulaEnergia(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACapsulaEnergia(ACapsulaEnergia&&); \
@@ -57,7 +55,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ACapsulaEnergia); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACapsulaEnergia); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACapsulaEnergia)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACapsulaEnergia)
 
 
 #define Observer_Source_Observer_CapsulaEnergia_h_15_PRIVATE_PROPERTY_OFFSET

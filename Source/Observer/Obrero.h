@@ -22,4 +22,10 @@ class OBSERVER_API IObrero
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+	virtual void BuildBoqueron(FVector UbicacionBoqueron, FRotator Rotacion) = 0;
+	virtual void BuildMesh() = 0;
+	virtual void BuildDisparador() = 0;
+	virtual void BuildEscudo() = 0;
+	virtual void BuildMuroEspinas() = 0;
+	virtual class ABoqueron* GetBoqueron() = 0;
 };

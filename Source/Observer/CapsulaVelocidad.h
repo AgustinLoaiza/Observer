@@ -13,5 +13,8 @@ UCLASS()
 class OBSERVER_API ACapsulaVelocidad : public ACapsulas
 {
 	GENERATED_BODY()
+
+public:
+	ACapsulaVelocidad();
 	
 };

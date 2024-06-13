@@ -1,5 +1,0 @@
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Development\Observer\Definitions.Observer.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\User\Desktop\Observer\Observer\Source\Observer/Escudo.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Escudo.generated.h

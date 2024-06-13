@@ -40,6 +40,9 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Boqueron.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Boqueron.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Boqueron.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/ComponenteCapsulas.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteCapsulas.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteCapsulas.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Cuidador.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Cuidador.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Cuidador.generated.h

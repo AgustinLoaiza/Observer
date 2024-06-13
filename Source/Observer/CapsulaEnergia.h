@@ -13,5 +13,8 @@ UCLASS()
 class OBSERVER_API ACapsulaEnergia : public ACapsulas 
 {
 	GENERATED_BODY() 
+
+public:
+	ACapsulaEnergia();
 	
 };

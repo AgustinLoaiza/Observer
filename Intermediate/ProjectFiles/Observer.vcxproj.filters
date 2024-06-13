@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Observer.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F80ACF31-8D5A-4942-8E93-EA1CF9EDFACF}</UniqueIdentifier>
+      <UniqueIdentifier>{4A3B514C-4690-4024-8C73-51AB0B2BB40E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Observer.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{020D07B3-D365-4637-A3D9-48EBD9CD6BF3}</UniqueIdentifier>
+      <UniqueIdentifier>{92F7776D-3364-4237-9C65-8BC6D5E8C685}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Observer">
-      <UniqueIdentifier>{C4F7549B-E9BD-4717-8286-041CD5D0E0FC}</UniqueIdentifier>
+      <UniqueIdentifier>{C51CBFFD-EB77-4F81-AEDA-0F19E16AD930}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Observer\BalaMortero.cpp">
       <Filter>Source\Observer</Filter>
@@ -70,10 +70,22 @@
     <ClInclude Include="..\..\Source\Observer\CapsulaVida.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\ComponenteBorracho.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\ComponenteBorracho.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Observer\ComponenteCapsulas.cpp">
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\ComponenteCapsulas.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\ComponenteChino.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\ComponenteChino.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Observer\Cuidador.cpp">
@@ -281,6 +293,12 @@
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\Suscriptora.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\TrampaChina.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\TrampaChina.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
   </ItemGroup>
