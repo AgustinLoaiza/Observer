@@ -5,6 +5,8 @@
 #include "C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Capsulas.gen.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/CapsulaVelocidad.gen.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/CapsulaVida.gen.cpp"
+#include "C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Cometa.gen.cpp"
+#include "C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ComponenteBoqueron.gen.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ComponenteBorracho.gen.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ComponenteCapsulas.gen.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ComponenteChino.gen.cpp"

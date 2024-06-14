@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Observer.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{DCE8B37A-B1D0-4AFD-88F7-98FF62A550F2}</UniqueIdentifier>
+      <UniqueIdentifier>{2FD22E90-D77E-4AE4-A763-E42BD9B5BC88}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Observer.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{FB850527-0558-4959-86BC-73B6CFAFBC15}</UniqueIdentifier>
+      <UniqueIdentifier>{DEC42DDD-9B19-49F0-B312-E027C26B3F9C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,8 +32,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Observer">
-      <UniqueIdentifier>{24D0F069-7C29-4EAC-8EC9-25652FBF6EFD}</UniqueIdentifier>
+      <UniqueIdentifier>{95DAEF07-72E4-4955-BB5B-A09919EBED5D}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Observer\AgujeroBlanco.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\AgujeroBlanco.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\AgujeroNegro.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\AgujeroNegro.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Observer\BalaMortero.cpp">
       <Filter>Source\Observer</Filter>
     </ClCompile>
@@ -68,6 +80,12 @@
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\CapsulaVida.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\Cometa.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\Cometa.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Observer\ComponenteBoqueron.cpp">
@@ -166,6 +184,12 @@
     <ClInclude Include="..\..\Source\Observer\FabricaDeNaves.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\FuerzaNatural.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\FuerzaNatural.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Observer\HansKundt.cpp">
       <Filter>Source\Observer</Filter>
     </ClCompile>
@@ -188,6 +212,12 @@
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\MementoVivere.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\Meteoro.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\Meteoro.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Observer\MuroEspinas.cpp">
@@ -265,6 +295,12 @@
     <ClInclude Include="..\..\Source\Observer\ObserverProjectile.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\Obstaculos.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\Obstaculos.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Observer\Originador.cpp">
       <Filter>Source\Observer</Filter>
     </ClCompile>
@@ -293,6 +329,12 @@
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\Socorro.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\SpawnFacade.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\SpawnFacade.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Observer\Suscriptora.cpp">

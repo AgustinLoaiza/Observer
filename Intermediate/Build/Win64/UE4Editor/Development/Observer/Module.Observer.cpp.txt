@@ -64,6 +64,15 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaVida.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\CapsulaVida.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\CapsulaVida.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/ComponenteBoqueron.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteBoqueron.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteBoqueron.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Ingeniero.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obrero.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obrero.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Ingeniero.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\HansKundt.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\HansKundt.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/ComponenteBorracho.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteBorracho.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteBorracho.generated.h
@@ -114,13 +123,7 @@ C:/Users/User/Desktop/Observer/Observer/Source/Observer/FabricaDeNaves.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeNaves.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeNaves.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/HansKundt.cpp
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\HansKundt.h
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obrero.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obrero.generated.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\HansKundt.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Ingeniero.cpp
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\Ingeniero.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Ingeniero.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Memento.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MementoVivere.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\MyPlayerController.h
@@ -138,8 +141,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteBoqueron.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteBoqueron.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverGameMode.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveFugaz.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveNodriza.cpp
@@ -147,6 +148,7 @@ C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveTanque.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Obrero.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Observer.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Observer.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverGameMode.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverPawn.cpp
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
