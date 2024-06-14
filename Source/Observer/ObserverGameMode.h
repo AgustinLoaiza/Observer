@@ -27,6 +27,9 @@ public:
 	//class AIngeniero* Ingeniero;
 	//class AHansKundt* HansKundt;
 
+	//Facade
+	class ASpawnFacade* SpawnFacade; 
+
 	//Observer
 	TArray<class ANaveEnemiga*> Naves; 
 	class ARadar* Radar;

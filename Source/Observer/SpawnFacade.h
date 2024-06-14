@@ -23,4 +23,18 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+protected:
+
+	TArray<FString> Tormenta;
+	TArray<class AFuerzaNatural*> Fenomeno;
+
+	class AAgujeroNegro* AgujeroNegro;
+	class AAgujeroBlanco* AgujeroBlanco;
+
+public:
+	void PermitirTormenta(TArray<FString>_Tormenta, TArray<class AFuerzaNatural*>_Fenomeno);
+	void lluviadeMeteoritos();
+	void lluviadeCometas();
+	void dropsCapsulas();
+
 };

@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeCometa() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACometa, 1304460676);
+	IMPLEMENT_CLASS(ACometa, 3401481112);
 	template<> OBSERVER_API UClass* StaticClass<ACometa>()
 	{
 		return ACometa::StaticClass();

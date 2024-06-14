@@ -23,4 +23,16 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+public:
+	virtual void GenerarMeteoros() PURE_VIRTUAL(AFuerzaNatural::GenerarMeteoros;);
+	virtual void GenerarCometas() PURE_VIRTUAL(AFuerzaNatural::GenerarCometas;);
+	virtual void GenerarCapsulas() PURE_VIRTUAL(AFuerzaNatural::GenerarCapsulas;);
+
+	virtual void Obligacion() PURE_VIRTUAL(AFuerzaNatural::Obligacion;);
+	virtual FString TituloAstros() PURE_VIRTUAL(AFuerzaNatural::TituloAstros, return "";);
+
+public:
+	void RecibirOrden(const TArray<FString>&_Orden);
+	void CrearOrden(const FString & _Orden);
+
 };

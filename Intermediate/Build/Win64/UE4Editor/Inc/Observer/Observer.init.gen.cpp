@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeObserver_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x932F7813,
+				0x90F4BD6C,
 				0xDB6378AE,
 				METADATA_PARAMS(nullptr, 0)
 			};

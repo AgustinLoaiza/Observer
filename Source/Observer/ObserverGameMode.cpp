@@ -15,6 +15,7 @@
 #include "Ingeniero.h"
 #include "HansKundt.h"
 #include "ComponenteBoqueron.h"
+#include "SpawnFacade.h"
 
 AObserverGameMode::AObserverGameMode()
 {
@@ -73,6 +74,13 @@ void AObserverGameMode::BeginPlay()
 	//HansKundt->ConstruirBoqueron(FVector(300.0f, 500.0f, 215.0f), FRotator(0.0f, 180.0f, 90.0f));
 	//ABoqueron* Boqueron = HansKundt->GetBoqueron();
 
+	//Facade
+	SpawnFacade = GetWorld()->SpawnActor<ASpawnFacade>(FVector::ZeroVector, FRotator::ZeroRotator);
+
+	SpawnFacade->lluviadeMeteoritos();
+	SpawnFacade->lluviadeCometas();
+	SpawnFacade->dropsCapsulas();
+
 
 	// Nave Nodriza Aplicando el patron Stade
 	// Generar Nave Nodriza
@@ -107,7 +115,7 @@ void AObserverGameMode::Tick(float DeltaTime)
 	}
 	Temporizador1 += DeltaTime;
 	
-	if (Temporizador1>=3.0f)
+	if (Temporizador1>=5.0f)
 	{
 		if (Pawn->IsPendingKill())
 		{

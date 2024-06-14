@@ -25,3 +25,26 @@ void AFuerzaNatural::Tick(float DeltaTime)
 
 }
 
+void AFuerzaNatural::CrearOrden(const FString& _Orden)
+{
+	if (_Orden == "Meteoro")
+	{
+		GenerarMeteoros();
+	}
+	else if (_Orden == "Cometa")
+	{
+		GenerarCometas();
+	}
+	else if (_Orden == "Capsula")
+	{
+		GenerarCapsulas();
+	}
+}
+
+void AFuerzaNatural::RecibirOrden(const TArray<FString>& _Orden)
+{
+	for (const FString& Orden : _Orden)
+	{
+		CrearOrden(Orden);
+	}
+}

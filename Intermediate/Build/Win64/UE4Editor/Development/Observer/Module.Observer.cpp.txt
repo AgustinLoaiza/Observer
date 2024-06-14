@@ -148,13 +148,15 @@ C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveTanque.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Obrero.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Observer.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Observer.h
-C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverGameMode.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverPawn.cpp
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/ObserverProjectile.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Obstaculos.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obstaculos.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obstaculos.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Originador.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/PlanosDeAsedio.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Publicador.cpp

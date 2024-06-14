@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeMeteoro() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMeteoro, 4256913723);
+	IMPLEMENT_CLASS(AMeteoro, 3656474683);
 	template<> OBSERVER_API UClass* StaticClass<AMeteoro>()
 	{
 		return AMeteoro::StaticClass();

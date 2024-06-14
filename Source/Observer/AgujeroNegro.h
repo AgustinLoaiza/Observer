@@ -13,5 +13,10 @@ UCLASS()
 class OBSERVER_API AAgujeroNegro : public AFuerzaNatural
 {
 	GENERATED_BODY()
+
+public:
+	void GenerarMeteoros() override;
+	void GenerarCometas() override;
+	void GenerarCapsulas() override {};
 	
 };

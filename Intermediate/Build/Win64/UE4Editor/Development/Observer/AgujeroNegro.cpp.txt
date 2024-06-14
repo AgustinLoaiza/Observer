@@ -3,3 +3,9 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer\AgujeroNegro.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\FuerzaNatural.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FuerzaNatural.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\AgujeroNegro.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Meteoro.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obstaculos.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obstaculos.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Meteoro.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Cometa.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Cometa.generated.h
