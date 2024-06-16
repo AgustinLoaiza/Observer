@@ -57,6 +57,8 @@ public:
 
 	float Temporizador1;
 
+	class ABoqueron* Boqueron;
+
 };
 
 

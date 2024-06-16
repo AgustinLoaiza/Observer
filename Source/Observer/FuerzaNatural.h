@@ -27,6 +27,7 @@ public:
 	virtual void GenerarMeteoros() PURE_VIRTUAL(AFuerzaNatural::GenerarMeteoros;);
 	virtual void GenerarCometas() PURE_VIRTUAL(AFuerzaNatural::GenerarCometas;);
 	virtual void GenerarCapsulas() PURE_VIRTUAL(AFuerzaNatural::GenerarCapsulas;);
+	virtual void GenerarNaves() PURE_VIRTUAL(AFuerzaNatural::GenerarNaves;);
 
 	virtual void Obligacion() PURE_VIRTUAL(AFuerzaNatural::Obligacion;);
 	virtual FString TituloAstros() PURE_VIRTUAL(AFuerzaNatural::TituloAstros, return "";);

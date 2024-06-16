@@ -355,12 +355,6 @@
     <ClInclude Include="..\..\Source\Observer\TrampaChina.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Observer\Victoria.cpp">
-      <Filter>Source\Observer</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Observer\Victoria.h">
-      <Filter>Source\Observer</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\Observer\Visitor.cpp">
       <Filter>Source\Observer</Filter>
     </ClCompile>

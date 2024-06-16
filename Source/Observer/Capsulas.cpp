@@ -46,5 +46,5 @@ void ACapsulas::Tick(float DeltaTime)
 
 void ACapsulas::Visit(AObserverPawn* _Pawn)
 {
-	_Pawn->AplicarAccion(); 
+	_Pawn->AplicarAccion(this); 
 }

@@ -31,4 +31,6 @@ private:
 public:
 	UFUNCTION()
 	void Spawn();
+
+	class ABoqueron* Boqueron;
 };

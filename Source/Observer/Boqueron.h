@@ -47,6 +47,7 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Boqueron")
 	UStaticMeshComponent* MeshBoqueron;
 
+	int Dureza = 25;
 	FVector UbicacionBoqueron;
 
 	float TiempoTranscurrido = 0.0f;
@@ -68,5 +69,7 @@ public:
 	void BuildEscudo();
 	void BuildMuroEspinas();
 	void BuildTrampaChina();
+
+	void Salud();
 
 };

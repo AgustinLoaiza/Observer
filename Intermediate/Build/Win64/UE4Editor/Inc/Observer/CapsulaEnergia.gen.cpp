@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeCapsulaEnergia() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACapsulaEnergia, 2001955453);
+	IMPLEMENT_CLASS(ACapsulaEnergia, 1200995194);
 	template<> OBSERVER_API UClass* StaticClass<ACapsulaEnergia>()
 	{
 		return ACapsulaEnergia::StaticClass();

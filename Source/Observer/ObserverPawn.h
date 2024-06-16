@@ -6,6 +6,12 @@
 #include "GameFramework/Character.h"
 #include "Estrategia.h"
 #include "Originador.h"
+#include "ComponenteCapsulas.h"
+#include "Capsulas.h"
+#include "TrampaChina.h"
+#include "ComponenteChino.h"
+#include "ComponenteBorracho.h"
+#include "ComponenteCapsulas.h"
 #include "EntradaVisitable.h"
 #include "ObserverPawn.generated.h"
 
@@ -109,12 +115,29 @@ public:
 public:
 	//Visitor
 	void Accept(class IVisitor* _Visitor) override;
-	void AplicarAccion();
+	void AplicarAccion(ACapsulas* _Capsulas);
+	class IVisitor* Visitor;
+	class ACapsulas* Capsulas;  
+	class ACapsulaVida* CapsulaVida;
+	class ACapsulaEnergia* CapsulaEnergia;
+	class ACapsulaVelocidad* CapsulaVelocidad;  
 	
 private:
 	int Vidas;
 	
 	FVector PosicionMuerte;
+
+public:
+	//Interaccion de Pawn con los Obstaculos
+	UPROPERTY()
+	UComponenteChino* Trampa;
+	UComponenteBorracho* Movimiento;
+	UPROPERTY()
+	UComponenteCapsulas* CapsulasCom; 
+	UFUNCTION()
+	void TakeItem(ATrampaChina* InventoryTrap, ACapsulas* InventoryItem);
+	UFUNCTION()
+	virtual void NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit) override;
 
 };
 

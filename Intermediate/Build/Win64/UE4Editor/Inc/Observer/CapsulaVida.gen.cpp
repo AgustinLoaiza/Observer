@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeCapsulaVida() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACapsulaVida, 2362276051);
+	IMPLEMENT_CLASS(ACapsulaVida, 358416487);
 	template<> OBSERVER_API UClass* StaticClass<ACapsulaVida>()
 	{
 		return ACapsulaVida::StaticClass();

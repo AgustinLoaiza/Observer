@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeCapsulaVelocidad() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACapsulaVelocidad, 3964602886);
+	IMPLEMENT_CLASS(ACapsulaVelocidad, 4247439179);
 	template<> OBSERVER_API UClass* StaticClass<ACapsulaVelocidad>()
 	{
 		return ACapsulaVelocidad::StaticClass();

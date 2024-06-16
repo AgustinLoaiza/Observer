@@ -187,3 +187,12 @@ void ABoqueron::BuildTrampaChina()
 		}
 	}
 }
+
+void ABoqueron::Salud()
+{
+	Dureza -= 5;
+	if (Dureza <= 0)
+	{
+		Destroy();
+	}
+}

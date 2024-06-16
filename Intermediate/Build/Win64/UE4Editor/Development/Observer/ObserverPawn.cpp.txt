@@ -10,6 +10,22 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer\Estrategia.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Estrategia.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Originador.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Originador.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteCapsulas.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteCapsulas.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Capsulas.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Visitor.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Visitor.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Capsulas.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\TrampaChina.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\TrampaChina.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteChino.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteChino.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteBorracho.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteBorracho.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\EntradaVisitable.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EntradaVisitable.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverPawn.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\ObserverProjectile.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaceCaza.h
@@ -38,6 +54,20 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\MuroEspinas.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MuroEspinas.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Meteoro.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obstaculos.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obstaculos.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Meteoro.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Cometa.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Cometa.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\CapsulaVida.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\CapsulaVida.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\CapsulaEnergia.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\CapsulaEnergia.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\CapsulaVelocidad.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\CapsulaVelocidad.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstrategiaLigera.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstrategiaLigera.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstrategiaPesada.h

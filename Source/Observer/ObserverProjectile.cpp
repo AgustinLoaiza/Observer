@@ -6,6 +6,8 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Engine/StaticMesh.h"
+#include "Disparador.h"
+#include "Boqueron.h"
 #include "NaveNodriza.h"
 #include "Escudo.h"
 #include "ObserverPawn.h"
@@ -53,6 +55,16 @@ void AObserverProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 	if (Escudo != nullptr)
 	{
 		Escudo->Durabilidad();
+	}
+	ADisparador* Disparador = Cast<ADisparador>(OtherActor);
+	if (Disparador != nullptr)
+	{
+		Disparador->Dureza();
+	}
+	ABoqueron* Boqueron = Cast<ABoqueron>(OtherActor);
+	if (Boqueron != nullptr)
+	{
+		Boqueron->Salud();
 	}
 	ANaceCaza* NaveCaza = Cast<ANaceCaza>(OtherActor);
 	if (NaveCaza != nullptr)

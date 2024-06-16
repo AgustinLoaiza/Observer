@@ -29,7 +29,7 @@ protected:
 	uint32 bCanFire : 1;
 	FVector GunOffset;
 	float FireRate;
-	int vida = 150;
+	int vida = 25;
 	FTimerHandle TimerHandle_ShotTimerExpired;
 
 	void Disparar(FVector FireDirection); 

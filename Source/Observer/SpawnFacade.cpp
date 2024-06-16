@@ -68,3 +68,10 @@ void ASpawnFacade::dropsCapsulas()
 	PermitirTormenta(Tormenta, Fenomeno);
 }
 
+void ASpawnFacade::OrdaNaves()
+{
+	Tormenta.Empty();
+	Tormenta.Add("Nave");
+	PermitirTormenta(Tormenta, Fenomeno);
+}
+

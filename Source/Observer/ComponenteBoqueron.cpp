@@ -26,7 +26,7 @@ void UComponenteBoqueron::BeginPlay()
 	HansKundt = GetWorld()->SpawnActor<AHansKundt>(AHansKundt::StaticClass()); //StaticCalss quiere decir que esto es una clase de Unreal, si no hay no va a saber de donde esta sacando
 	Ingeniero = GetWorld()->SpawnActor<AIngeniero>(AIngeniero::StaticClass());
 	Spawn();
-	ABoqueron* Boqueron = HansKundt->GetBoqueron();
+	Boqueron = HansKundt->GetBoqueron();
 	
 }
 
@@ -42,6 +42,6 @@ void UComponenteBoqueron::TickComponent(float DeltaTime, ELevelTick TickType, FA
 void UComponenteBoqueron::Spawn()
 {
 	HansKundt->SetObrero(Ingeniero); 
-	HansKundt->ConstruirBoqueron(FVector(1300.0f, 700.0f, 215.0f), FRotator(0.0f, 180.0f, 90.0f)); 
+	HansKundt->ConstruirBoqueron(FVector(1300.0f, -700.0f, 215.0f), FRotator(0.0f, 180.0f, 90.0f)); 
 }
 

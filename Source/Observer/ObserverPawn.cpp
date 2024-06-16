@@ -13,6 +13,14 @@
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
 #include "NaveEnemiga.h"
+#include "MuroEspinas.h"
+#include "Meteoro.h"
+#include "Cometa.h"
+#include "Capsulas.h"
+#include "CapsulaVida.h"
+#include "CapsulaEnergia.h"
+#include "CapsulaVelocidad.h"
+#include "TrampaChina.h"
 #include "EstrategiaLigera.h"
 #include "EstrategiaPesada.h"
 #include "EstrategiaMultiple.h"
@@ -59,7 +67,10 @@ AObserverPawn::AObserverPawn()
 
 	Vidas = 3;
 	Energia = 100;
-	//PosicionMuerte = GetActorLocation();
+	//Componentes de actor
+	CapsulasCom=CreateDefaultSubobject<UComponenteCapsulas>(TEXT("Capsulas"));  
+	Trampa=CreateDefaultSubobject<UComponenteChino>(TEXT("Trampa"));
+	Movimiento=CreateDefaultSubobject<UComponenteBorracho>(TEXT("Movimiento"));
  
 }
 
@@ -213,11 +224,84 @@ FVector AObserverPawn::ObtenerPosicionMuerte() const
 
 void AObserverPawn::Accept(IVisitor* _Visitor)
 {
+	if (_Visitor==nullptr)
+	{
+		return;
+	}
 	_Visitor->Visit(this);
 }
 
-void AObserverPawn::AplicarAccion()
+void AObserverPawn::AplicarAccion(ACapsulas* _Capsulas)
 {
+	CapsulaVida=Cast<ACapsulaVida>(_Capsulas);
+	CapsulaEnergia=Cast<ACapsulaEnergia>(_Capsulas);
+	CapsulaVelocidad=Cast<ACapsulaVelocidad>(_Capsulas); 
+
+	if (CapsulaVida)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Vida: " + FString::FromInt(Vidas))); 
+		Vidas += 1;
+	}
+	if (CapsulaEnergia)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Black, TEXT("Energia: " + FString::FromInt(Energia))); 
+		Energia = 100;
+	}
+	if (CapsulaVelocidad)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, TEXT("Velocidad: " + FString::FromInt(MoveSpeed))); 
+		MoveSpeed = 1500.0f;
+	}
+
+}
+
+//Colisiones
+void AObserverPawn::TakeItem(ATrampaChina* InventoryTrap, ACapsulas* InventoryItem)
+{
+	if (InventoryTrap)
+	{
+		Movimiento->ActivarMovimiento(); 
+		InventoryTrap->ComprarComponente(); 
+		Trampa->AddToInventory(InventoryTrap); 
+	}
+	if (InventoryItem)
+	{
+		InventoryItem->PickUp();
+	}
+}
+
+void AObserverPawn::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
+{
+	AMeteoro* Meteoro = Cast<AMeteoro>(Other);
+	if (Meteoro)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Energia: " + FString::FromInt(Energia)));
+		Energia -= 10;
+
+	}
+	ACometa* Cometa = Cast<ACometa>(Other); 
+	if (Cometa)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Energia: " + FString::FromInt(Energia)));
+		Energia -= 20;
+	}
+	AMuroEspinas* Muro = Cast<AMuroEspinas>(Other);
+	if (Muro)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Energia: " + FString::FromInt(Energia))); 
+		Energia -= 30;
+	}
+	ATrampaChina* InventoryItemChino = Cast<ATrampaChina>(Other);
+
+	Capsulas = Cast<ACapsulas>(Other); 
+	if (InventoryItemChino != nullptr || Capsulas != nullptr)
+	{
+		TakeItem(InventoryItemChino, Capsulas);
+
+		Accept(Capsulas);  
+		
+	}
+
 }
 
 //void AObserverPawn::EntrarEnBatalla()

@@ -39,6 +39,10 @@ void AFuerzaNatural::CrearOrden(const FString& _Orden)
 	{
 		GenerarCapsulas();
 	}
+	else if (_Orden == "Nave")
+	{
+		GenerarNaves();
+	}
 }
 
 void AFuerzaNatural::RecibirOrden(const TArray<FString>& _Orden)

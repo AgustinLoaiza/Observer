@@ -36,5 +36,6 @@ public:
 	void lluviadeMeteoritos();
 	void lluviadeCometas();
 	void dropsCapsulas();
+	void OrdaNaves();
 
 };
