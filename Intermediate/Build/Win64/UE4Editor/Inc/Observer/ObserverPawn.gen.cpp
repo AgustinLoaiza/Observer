@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeObserverPawn() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	OBSERVER_API UClass* Z_Construct_UClass_UOriginador_NoRegister();
+	OBSERVER_API UClass* Z_Construct_UClass_UEntradaVisitable_NoRegister();
 // End Cross Module References
 	void AObserverPawn::StaticRegisterNativesAObserverPawn()
 	{
@@ -163,6 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeObserverPawn() {}
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AObserverPawn_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UOriginador_NoRegister, (int32)VTABLE_OFFSET(AObserverPawn, IOriginador), false },
+			{ Z_Construct_UClass_UEntradaVisitable_NoRegister, (int32)VTABLE_OFFSET(AObserverPawn, IEntradaVisitable), false },
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AObserverPawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AObserverPawn>::IsAbstract,
@@ -191,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeObserverPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AObserverPawn, 4132125428);
+	IMPLEMENT_CLASS(AObserverPawn, 2917269207);
 	template<> OBSERVER_API UClass* StaticClass<AObserverPawn>()
 	{
 		return AObserverPawn::StaticClass();

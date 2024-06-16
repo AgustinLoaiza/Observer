@@ -4,13 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "Engine/StaticMeshActor.h"
+#include "Visitor.h"
 #include "Capsulas.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class OBSERVER_API ACapsulas : public AStaticMeshActor
+class OBSERVER_API ACapsulas : public AStaticMeshActor, public IVisitor
 {
 	GENERATED_BODY()
 
@@ -33,5 +34,8 @@ protected:
 	float limiteCaida;
 
 	FVector posicion;
+
+public:
+	virtual void Visit(class AObserverPawn* _Pawn) override;
 	
 };

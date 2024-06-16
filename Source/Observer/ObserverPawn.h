@@ -6,10 +6,11 @@
 #include "GameFramework/Character.h"
 #include "Estrategia.h"
 #include "Originador.h"
+#include "EntradaVisitable.h"
 #include "ObserverPawn.generated.h"
 
 UCLASS(Blueprintable)
-class AObserverPawn : public APawn, public IOriginador
+class AObserverPawn : public APawn, public IOriginador, public IEntradaVisitable
 {
 	GENERATED_BODY()
 
@@ -104,6 +105,12 @@ public:
 
 	int Energia;
 	class AMementoVivere* MementoVivere;
+
+public:
+	//Visitor
+	void Accept(class IVisitor* _Visitor) override;
+	void AplicarAccion();
+	
 private:
 	int Vidas;
 	

@@ -2,6 +2,7 @@
 
 
 #include "Capsulas.h"
+#include "ObserverPawn.h"
 
 ACapsulas::ACapsulas()
 {
@@ -41,4 +42,9 @@ void ACapsulas::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	Mover(DeltaTime);
+}
+
+void ACapsulas::Visit(AObserverPawn* _Pawn)
+{
+	_Pawn->AplicarAccion(); 
 }

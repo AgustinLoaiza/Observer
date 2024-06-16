@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Observer.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2FD22E90-D77E-4AE4-A763-E42BD9B5BC88}</UniqueIdentifier>
+      <UniqueIdentifier>{5B85A12D-DE19-4109-9EFF-61569800CAAB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Observer.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{DEC42DDD-9B19-49F0-B312-E027C26B3F9C}</UniqueIdentifier>
+      <UniqueIdentifier>{1D9A5D59-432B-452C-8D81-EEFFB4D6BD8F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Observer">
-      <UniqueIdentifier>{95DAEF07-72E4-4955-BB5B-A09919EBED5D}</UniqueIdentifier>
+      <UniqueIdentifier>{C2C85075-DC2D-47B8-8BC1-B4919A42CBE0}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Observer\AgujeroBlanco.cpp">
       <Filter>Source\Observer</Filter>
@@ -122,6 +122,12 @@
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\Disparador.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\EntradaVisitable.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\EntradaVisitable.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Observer\Escudo.cpp">
@@ -347,6 +353,18 @@
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\TrampaChina.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\Victoria.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\Victoria.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\Visitor.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\Visitor.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
   </ItemGroup>

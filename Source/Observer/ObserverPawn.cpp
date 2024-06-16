@@ -17,6 +17,7 @@
 #include "EstrategiaPesada.h"
 #include "EstrategiaMultiple.h"
 #include "MementoVivere.h"
+#include "Visitor.h"
 
 const FName AObserverPawn::MoveForwardBinding("MoveForward");
 const FName AObserverPawn::MoveRightBinding("MoveRight");
@@ -56,8 +57,8 @@ AObserverPawn::AObserverPawn()
 	FireRate = 0.1f;
 	bCanFire = true;
 
-	Vidas = 1;
-	Energia = 30;
+	Vidas = 3;
+	Energia = 100;
 	//PosicionMuerte = GetActorLocation();
  
 }
@@ -208,6 +209,15 @@ int AObserverPawn::ObtenerEnergia() const
 FVector AObserverPawn::ObtenerPosicionMuerte() const
 {
 	return PosicionMuerte;
+}
+
+void AObserverPawn::Accept(IVisitor* _Visitor)
+{
+	_Visitor->Visit(this);
+}
+
+void AObserverPawn::AplicarAccion()
+{
 }
 
 //void AObserverPawn::EntrarEnBatalla()

@@ -31,6 +31,11 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/CapsulaVida.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/CapsulaVida.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\CapsulaVida.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Cometa.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/Cometa.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obstaculos.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obstaculos.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Cometa.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ComponenteBoqueron.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/ComponenteBoqueron.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteBoqueron.generated.h
@@ -112,6 +117,9 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/MementoVivere.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/MementoVivere.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MementoVivere.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Meteoro.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/Meteoro.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Meteoro.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/MuroEspinas.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/MuroEspinas.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MuroEspinas.generated.h
@@ -143,6 +151,7 @@ C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/O
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ObserverProjectile.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/ObserverProjectile.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverProjectile.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Obstaculos.gen.cpp
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Originador.gen.cpp
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/PlanosDeAsedio.gen.cpp
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Publicador.gen.cpp
@@ -157,3 +166,6 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer/SpawnFacade.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\SpawnFacade.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Suscriptora.gen.cpp
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/TrampaChina.gen.cpp
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Victoria.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/Victoria.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Victoria.generated.h

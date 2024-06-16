@@ -42,6 +42,6 @@ void UComponenteBoqueron::TickComponent(float DeltaTime, ELevelTick TickType, FA
 void UComponenteBoqueron::Spawn()
 {
 	HansKundt->SetObrero(Ingeniero); 
-	HansKundt->ConstruirBoqueron(FVector(300.0f, 500.0f, 215.0f), FRotator(0.0f, 180.0f, 90.0f)); 
+	HansKundt->ConstruirBoqueron(FVector(1300.0f, 700.0f, 215.0f), FRotator(0.0f, 180.0f, 90.0f)); 
 }
 
