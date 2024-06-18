@@ -73,7 +73,7 @@ void ABalaMortero::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrim
 	Pawn=Cast<AObserverPawn>(OtherActor);
 	if (Pawn)
 	{
-		//Pawn->RecibirDanio();
+		//Pawn->Energia-=30;
 		//Destroy();
 	}
 }

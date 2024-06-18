@@ -304,32 +304,6 @@ void AObserverPawn::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimi
 
 }
 
-//void AObserverPawn::EntrarEnBatalla()
-//{
-//	//Estrategia->Disparar(this, FireDirection);
-//}
-
-//void AObserverPawn::FireShot(FVector FireDirection)
-//{
-//	// If it's ok to fire again
-//	if (bCanFire == true)
-//	{
-//		// If we are pressing fire stick in a direction
-//		if (FireDirection.SizeSquared() > 0.0f)
-//		{
-//			const FRotator FireRotation = FireDirection.Rotation();
-//			// Spawn projectile at an offset from this pawn
-//			const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
-//
-//			UWorld* const World = GetWorld();
-//			if (World != nullptr)
-//			{
-//				// spawn the projectile
-//				World->SpawnActor<AObserverProjectile>(SpawnLocation, FireRotation);
-//			}
-//
-//			bCanFire = false;
-//			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &AObserverPawn::ShotTimerExpired, FireRate);
 //
 //			// try and play the sound if specified
 //			if (FireSound != nullptr)
@@ -342,8 +316,4 @@ void AObserverPawn::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimi
 //	}
 //}
 //
-//void AObserverPawn::ShotTimerExpired()
-//{
-//	bCanFire = true;
-//}
 

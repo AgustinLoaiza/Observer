@@ -104,5 +104,5 @@ void ANaceCaza::RecibirDanio()
 
 void ANaceCaza::Curarse()
 {
-	//Vida = 100;
+	Vida = 25;
 }

@@ -111,5 +111,5 @@ void ANaveFugaz::RecibirDanio()
 
 void ANaveFugaz::Curarse()
 {
-	//Vida = 100;
+	Vida = 25;
 }

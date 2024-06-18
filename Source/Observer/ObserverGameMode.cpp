@@ -32,42 +32,6 @@ void AObserverGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//Radar = GetWorld()->SpawnActor<ARadar>(ARadar::StaticClass());
-
-	//ubicacionInicialNavesCazas = FVector(1000.0f, -150.0f, 200.0f);
-	//ubicacionInicialNavesTanques = FVector(800.0f, -150.0f, 200.0f);
-	//ubicacionInicialNavesFugaces = FVector(1200.0f, -450.0f, 200.0f);
-
-	//// Generar Naves Fugaces en las esquinas
-	//for (int i = 0; i < 2; i++) {
-	//	FVector PosicionNaveActual = FVector(ubicacionInicialNavesFugaces.X, ubicacionInicialNavesFugaces.Y + i * 1200, ubicacionInicialNavesFugaces.Z);
-	//	ANaveEnemiga* NuevaNaveFugaz = AFabricaDeNaves::FabricarNave("NaveFugaz", GetWorld(), PosicionNaveActual, FRotator::ZeroRotator); 
-	//	//NaveFugaz = GetWorld()->SpawnActor<ANaveFugaz>(PosicionNaveActual, FRotator::ZeroRotator);
-	//	NuevaNaveFugaz->EstablecerRadar(Radar);  
-	//	//NaveFugaz->EstablecerRadar(Radar);
-	//	Naves.Add(NuevaNaveFugaz);
-	//}
-
-	//// Generar Naves Tanques
-	//for (int i = 0; i < 2; i++) {
-	//	FVector PosicionNaveActual = FVector(ubicacionInicialNavesTanques.X, ubicacionInicialNavesTanques.Y + i * 500, ubicacionInicialNavesTanques.Z);
-	//	ANaveEnemiga* NuevaNaveTanque = AFabricaDeNaves::FabricarNave("NaveTanque", GetWorld(), PosicionNaveActual, FRotator::ZeroRotator);
-	//	//NaveTanque = GetWorld()->SpawnActor<ANaveTanque>(PosicionNaveActual, FRotator::ZeroRotator);
-	//	NuevaNaveTanque->EstablecerRadar(Radar); 
-	//	//NaveTanque->EstablecerRadar(Radar);
-	//	Naves.Add(NuevaNaveTanque);
-	//}
-
-	//// Generar Naves Caza
-	//for (int i = 0; i < 5; i++) {
-	//	FVector PosicionNaveActual = FVector(ubicacionInicialNavesCazas.X, ubicacionInicialNavesCazas.Y + i * 200, ubicacionInicialNavesCazas.Z);
-	//	ANaveEnemiga* NuevaNaveCaza = AFabricaDeNaves::FabricarNave("NaveCaza", GetWorld(), PosicionNaveActual, FRotator::ZeroRotator);
-	//	//NaveCaza = GetWorld()->SpawnActor<ANaceCaza>(PosicionNaveActual, FRotator::ZeroRotator);
-	//	NuevaNaveCaza->EstablecerRadar(Radar); 
-	//	//NaveCaza->EstablecerRadar(Radar); 
-	//	Naves.Add(NuevaNaveCaza);
-	//}
-
 	//Builder
 	Boqueron = ComponenteBoqueron->Boqueron;
 
@@ -97,19 +61,7 @@ void AObserverGameMode::BeginPlay()
 void AObserverGameMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
-	/*for (int i = 0; i < Naves.Num(); i++)
-	{
-		VidaPromedio = (Naves[i]->Vida+VidaPromedio/Naves.Num());
-		if (VidaPromedio<20)
-		{
-			Radar->SetVidaPromedio(10);
-		}
-		if (i==Naves.Num())
-		{
-			VidaPromedio = 0;
-		}
-	}*/
+
 	Temporizador1 += DeltaTime;
 	if (Temporizador1>=5.0f)
 	{
@@ -122,10 +74,6 @@ void AObserverGameMode::Tick(float DeltaTime)
 		Temporizador1 = 0.0f;
 		
 	}
-	/*if (NaveNodriza == nullptr)
-	{
-		GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("VICCC VICCC VICTORIA")), true, FVector2D(5.0f, 5.0f));
-	}*/
 }
 
 void AObserverGameMode::GuardarJuego()

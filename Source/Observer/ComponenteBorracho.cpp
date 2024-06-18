@@ -41,7 +41,7 @@ void UComponenteBorracho::MostrarMovimiento(float DeltaTime)
 	if (verificar)
 	{
 		TiempoTranscurrido++;
-		if (TiempoTranscurrido < 300)
+		if (TiempoTranscurrido < 200)
 		{
 			AActor* Parent = GetOwner();
 			if (Parent)

@@ -2,9 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.Observer.cpp.obj": [
-			"AgujeroBlanco.cpp.obj",
-			"AgujeroNegro.cpp.obj",
-			"BalaMortero.cpp.obj",
 			"Boqueron.cpp.obj",
 			"CapsulaEnergia.cpp.obj",
 			"Capsulas.cpp.obj",
@@ -12,7 +9,6 @@
 			"CapsulaVida.cpp.obj",
 			"Cometa.cpp.obj",
 			"ComponenteBoqueron.cpp.obj",
-			"ComponenteBorracho.cpp.obj",
 			"ComponenteCapsulas.cpp.obj",
 			"ComponenteChino.cpp.obj",
 			"Cuidador.cpp.obj",
@@ -38,13 +34,10 @@
 			"Meteoro.cpp.obj",
 			"MuroEspinas.cpp.obj",
 			"MyPlayerController.cpp.obj",
-			"NaceCaza.cpp.obj",
 			"NaveEnemiga.cpp.obj",
 			"NaveNodriza.cpp.obj",
 			"Obrero.cpp.obj",
 			"Observer.cpp.obj",
-			"ObserverGameMode.cpp.obj",
-			"ObserverPawn.cpp.obj",
 			"ObserverProjectile.cpp.obj",
 			"Obstaculos.cpp.obj",
 			"Originador.cpp.obj",
@@ -56,8 +49,15 @@
 			"Suscriptora.cpp.obj",
 			"TrampaChina.cpp.obj",
 			"Visitor.cpp.obj",
+			"AgujeroBlanco.cpp.obj",
+			"AgujeroNegro.cpp.obj",
+			"BalaMortero.cpp.obj",
+			"ComponenteBorracho.cpp.obj",
+			"NaceCaza.cpp.obj",
 			"NaveFugaz.cpp.obj",
-			"NaveTanque.cpp.obj"
+			"NaveTanque.cpp.obj",
+			"ObserverGameMode.cpp.obj",
+			"ObserverPawn.cpp.obj"
 		],
 		"Module.Observer.gen.cpp.obj": [
 			"AgujeroBlanco.gen.cpp.obj",
