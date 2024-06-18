@@ -12,11 +12,10 @@ ANaveNodriza::ANaveNodriza()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/NaveNodriza/1710aa07ae28_nave_espacial_grand.1710aa07ae28_nave_espacial_grand'"));
 	NaveNodrizaMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
 	NaveNodrizaMesh->SetStaticMesh(ShipMesh.Object);
-	GetActorRelativeScale3D();
-	SetActorScale3D(FVector(1.0f, 1.0f, 1.0f));
+	NaveNodrizaMesh->SetRelativeScale3D(FVector(1.50f, 1.50f, 1.50f)); 
 
 	vida = 200;
 }

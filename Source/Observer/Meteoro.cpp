@@ -5,7 +5,7 @@
 
 AMeteoro::AMeteoro()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Assets/Meteoros/24d9db5338b2_meteoro__3d_asset_0.24d9db5338b2_meteoro__3d_asset_0'"));
 	mallaObstaculo = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
 	mallaObstaculo->SetStaticMesh(ShipMesh.Object);
 	GetActorRelativeScale3D();

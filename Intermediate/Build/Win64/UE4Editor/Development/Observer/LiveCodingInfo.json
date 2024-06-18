@@ -18,6 +18,7 @@
 			"Cuidador.cpp.obj",
 			"Disparador.cpp.obj",
 			"EntradaVisitable.cpp.obj",
+			"Escudo.cpp.obj",
 			"EstadoDebil.cpp.obj",
 			"EstadoDefensivo.cpp.obj",
 			"EstadoOfensivo.cpp.obj",
@@ -34,13 +35,11 @@
 			"Ingeniero.cpp.obj",
 			"Memento.cpp.obj",
 			"MementoVivere.cpp.obj",
-			"Meteoro.cpp.obj",
 			"MuroEspinas.cpp.obj",
 			"MyPlayerController.cpp.obj",
 			"NaceCaza.cpp.obj",
 			"NaveEnemiga.cpp.obj",
 			"NaveFugaz.cpp.obj",
-			"NaveNodriza.cpp.obj",
 			"NaveTanque.cpp.obj",
 			"Obrero.cpp.obj",
 			"Observer.cpp.obj",
@@ -57,7 +56,8 @@
 			"Suscriptora.cpp.obj",
 			"TrampaChina.cpp.obj",
 			"Visitor.cpp.obj",
-			"Escudo.cpp.obj"
+			"Meteoro.cpp.obj",
+			"NaveNodriza.cpp.obj"
 		],
 		"Module.Observer.gen.cpp.obj": [
 			"AgujeroBlanco.gen.cpp.obj",

@@ -120,6 +120,7 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MementoVivere.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Disparador.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/EntradaVisitable.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Escudo.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstadoDebil.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstadoDebil.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstadosNaveNodriza.h
@@ -158,7 +159,6 @@ C:/Users/User/Desktop/Observer/Observer/Source/Observer/Memento.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MementoVivere.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\MyPlayerController.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MyPlayerController.generated.h
-C:/Users/User/Desktop/Observer/Observer/Source/Observer/Meteoro.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MuroEspinas.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MyPlayerController.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaceCaza.cpp
@@ -170,7 +170,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverGameMode.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveFugaz.cpp
-C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveNodriza.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveTanque.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Obrero.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Observer.cpp
