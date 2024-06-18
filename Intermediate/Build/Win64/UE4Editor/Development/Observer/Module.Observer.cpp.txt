@@ -94,10 +94,9 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer\Escudo.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Escudo.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\MuroEspinas.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MuroEspinas.generated.h
-C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaEnergia.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Capsulas.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaVelocidad.cpp
-C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaVida.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Cometa.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/ComponenteBoqueron.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteBoqueron.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteBoqueron.generated.h

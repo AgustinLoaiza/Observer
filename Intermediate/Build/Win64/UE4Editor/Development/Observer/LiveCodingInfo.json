@@ -6,10 +6,9 @@
 			"AgujeroNegro.cpp.obj",
 			"BalaMortero.cpp.obj",
 			"Boqueron.cpp.obj",
-			"CapsulaEnergia.cpp.obj",
 			"Capsulas.cpp.obj",
 			"CapsulaVelocidad.cpp.obj",
-			"CapsulaVida.cpp.obj",
+			"Cometa.cpp.obj",
 			"ComponenteBoqueron.cpp.obj",
 			"ComponenteBorracho.cpp.obj",
 			"ComponenteCapsulas.cpp.obj",
@@ -57,7 +56,8 @@
 			"Suscriptora.cpp.obj",
 			"TrampaChina.cpp.obj",
 			"Visitor.cpp.obj",
-			"Cometa.cpp.obj"
+			"CapsulaEnergia.cpp.obj",
+			"CapsulaVida.cpp.obj"
 		],
 		"Module.Observer.gen.cpp.obj": [
 			"AgujeroBlanco.gen.cpp.obj",
