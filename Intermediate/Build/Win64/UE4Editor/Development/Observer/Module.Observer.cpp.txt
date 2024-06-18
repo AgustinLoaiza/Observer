@@ -18,10 +18,15 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer\CapsulaVelocidad.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\CapsulaVelocidad.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeCapsulas.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeCapsulas.generated.h
-C:/Users/User/Desktop/Observer/Observer/Source/Observer/BalaMortero.cpp
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\BalaMortero.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\BalaMortero.generated.h
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\ObserverProjectile.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/AgujeroNegro.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\AgujeroNegro.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\AgujeroNegro.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Meteoro.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obstaculos.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obstaculos.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Meteoro.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Cometa.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Cometa.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaceCaza.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveEnemiga.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Suscriptora.h
@@ -34,6 +39,18 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveFugaz.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveFugaz.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveTanque.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveTanque.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeNaves.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeNaves.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeObstaculos.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeObstaculos.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Radar.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\Publicador.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Publicador.generated.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Radar.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/BalaMortero.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\BalaMortero.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\BalaMortero.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\ObserverProjectile.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverProjectile.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
@@ -79,12 +96,9 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer\MuroEspinas.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MuroEspinas.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaEnergia.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Capsulas.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaVelocidad.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaVida.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Cometa.cpp
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\Cometa.h
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\Obstaculos.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Obstaculos.generated.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Cometa.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/ComponenteBoqueron.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteBoqueron.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteBoqueron.generated.h
@@ -137,13 +151,7 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer\EstrategiaPesada.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstrategiaPesada.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/FabricaDeCapsulas.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/FabricaDeNaves.cpp
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeNaves.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeNaves.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/FabricaDeObstaculos.cpp
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeObstaculos.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeObstaculos.generated.h
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\Meteoro.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Meteoro.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/FuerzaNatural.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/HansKundt.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Ingeniero.cpp
@@ -154,22 +162,15 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Meteoro.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MuroEspinas.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MyPlayerController.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaceCaza.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveEnemiga.cpp
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\Radar.h
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\Publicador.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Publicador.generated.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Radar.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\ObserverGameMode.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverGameMode.generated.h
-C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveFugaz.cpp
-C:\Users\User\Desktop\Observer\Observer\Source\Observer\AgujeroNegro.h
-C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\AgujeroNegro.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveNodriza.cpp
-C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveTanque.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Obrero.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Observer.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Observer.h

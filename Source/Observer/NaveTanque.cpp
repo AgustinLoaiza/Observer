@@ -8,11 +8,10 @@
 ANaveTanque::ANaveTanque()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
-	mallaNaveEnemiga = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh")); 
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Assets/NaveTanque/c256a703439d_Caza_estelar_de_Sta.c256a703439d_Caza_estelar_de_Sta'"));
+	mallaNaveEnemiga = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
-	GetActorRelativeScale3D();
-	SetActorScale3D(FVector(1.0f, 1.0f, 1.0f));
+	mallaNaveEnemiga->SetRelativeScale3D(FVector(2.0f, 2.0f, 2.0f));
 
 	velocidad = 1.0f;
 	bCanFire = true;
