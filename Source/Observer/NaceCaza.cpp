@@ -9,7 +9,7 @@
 ANaceCaza::ANaceCaza()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Assets/NaveCaza/e1d3aedca958_caza_estelar_StarWa.e1d3aedca958_caza_estelar_StarWa'"));
 	mallaNaveEnemiga = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 	GetActorRelativeScale3D();
