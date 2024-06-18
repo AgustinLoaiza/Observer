@@ -6,7 +6,6 @@
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/ComponenteChino.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/Cuidador.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/EntradaVisitable.cpp"
-#include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/Escudo.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstadoDebil.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstadoDefensivo.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/EstadoOfensivo.cpp"

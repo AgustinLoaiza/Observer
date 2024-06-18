@@ -8,7 +8,7 @@ AEscudo::AEscudo()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Assets/Escudo/5e08bc42f025_glowing_galactic_cr.5e08bc42f025_glowing_galactic_cr'"));
 	// Create the mesh component
 	MeshEscudo = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Escudo"));
 	MeshEscudo->SetStaticMesh(ShipMesh.Object);
