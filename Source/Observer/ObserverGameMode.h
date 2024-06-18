@@ -59,6 +59,9 @@ public:
 
 	class ABoqueron* Boqueron;
 
+	int Contador;
+
+
 };
 
 

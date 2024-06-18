@@ -6,7 +6,7 @@
 ACapsulaVelocidad::ACapsulaVelocidad()
 {
 	auto MeshAsset =
-		ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus'"));
+		ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
 	if (MeshAsset.Object != nullptr)
 	{
 		GetStaticMeshComponent()->SetStaticMesh(MeshAsset.Object);

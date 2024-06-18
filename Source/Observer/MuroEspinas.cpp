@@ -8,7 +8,7 @@ AMuroEspinas::AMuroEspinas()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_TriPyramid.Shape_TriPyramid'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Assets/Muralla/43ac9f1bd2df_Bloque_de_muralla__.43ac9f1bd2df_Bloque_de_muralla__'"));
 	// Create the mesh component
 	MeshMuroEspinas = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MuroEspinas"));
 	MeshMuroEspinas->SetStaticMesh(ShipMesh.Object);

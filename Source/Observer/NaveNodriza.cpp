@@ -49,6 +49,7 @@ void ANaveNodriza::RecibirDanio()
 	if (vida <= 0)
 	{
 		Destroy();
+		GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("VICCC VICCC VICTORIA")), true, FVector2D(5.0f, 5.0f));
 	}
 	InicializarEstadosNaveNodriza(); 
 }

@@ -6,7 +6,7 @@
 ACapsulaEnergia::ACapsulaEnergia()
 {
 	auto MeshAsset =
-		ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_NarrowCapsule.Shape_NarrowCapsule'"));
+		ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
 	if (MeshAsset.Object != nullptr)
 	{
 		GetStaticMeshComponent()->SetStaticMesh(MeshAsset.Object);

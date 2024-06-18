@@ -27,7 +27,7 @@ public:
 	void GenerarNaves() override;
 	void GenerarCapsulas() override {};
 
-	int ContadorNaves;
-	void SetContadorNaves(int _Contador);
+	//int ContadorNaves;
+	//void SetContadorNaves(int _Contador);
 	
 };

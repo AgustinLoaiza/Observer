@@ -24,6 +24,7 @@ AObserverGameMode::AObserverGameMode()
 	PlayerControllerClass = AMyPlayerController::StaticClass(); 
 	PrimaryActorTick.bCanEverTick = true;
 	VidaPromedio = 0;
+	Contador=Naves.Num();  
 	ComponenteBoqueron = CreateDefaultSubobject<UComponenteBoqueron>(TEXT("ComponenteBoqueron")); 
 }
 
@@ -81,10 +82,10 @@ void AObserverGameMode::BeginPlay()
 
 	// Nave Nodriza Aplicando el patron Stade
 	// Generar Nave Nodriza
-	/*ubicacionInicialNaveNodriza = FVector(1000.0f, 0.0f, 215.0f);
-	NaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>(ubicacionInicialNaveNodriza, FRotator::ZeroRotator);
+	ubicacionInicialNaveNodriza = FVector(1000.0f, 900.0f, 215.0f); 
+	NaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>(ubicacionInicialNaveNodriza, FRotator::ZeroRotator); 
 
-	NaveNodriza->InicializarEstadosNaveNodriza();*/ 
+	NaveNodriza->InicializarEstadosNaveNodriza();  
 
 	// Memento
 	Pawn = Cast<AObserverPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0)); 
@@ -110,7 +111,6 @@ void AObserverGameMode::Tick(float DeltaTime)
 		}
 	}*/
 	Temporizador1 += DeltaTime;
-	
 	if (Temporizador1>=5.0f)
 	{
 		if (Pawn->IsPendingKill())
@@ -122,9 +122,9 @@ void AObserverGameMode::Tick(float DeltaTime)
 		Temporizador1 = 0.0f;
 		
 	}
-	/*if (Naves.Num()<=0) 
+	/*if (NaveNodriza == nullptr)
 	{
-		GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, TEXT("VICCC VICCC VICTORIA"), true, FVector2D(5.0f, 5.0f));
+		GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("VICCC VICCC VICTORIA")), true, FVector2D(5.0f, 5.0f));
 	}*/
 }
 

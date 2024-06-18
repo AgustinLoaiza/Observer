@@ -98,6 +98,9 @@ C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\O
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/EstrategiaPesada.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/EstrategiaPesada.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\EstrategiaPesada.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/FabricaDeCapsulas.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/FabricaDeCapsulas.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeCapsulas.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/FabricaDeNaves.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/FabricaDeNaves.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveEnemiga.h
@@ -107,6 +110,9 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer\Socorro.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Socorro.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveEnemiga.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeNaves.generated.h
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/FabricaDeObstaculos.gen.cpp
+C:\Users\User\Desktop\Observer\Observer\Source\Observer/FabricaDeObstaculos.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeObstaculos.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/FuerzaNatural.gen.cpp
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/HansKundt.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/HansKundt.h
@@ -145,6 +151,7 @@ C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/O
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/NaveTanque.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveTanque.generated.h
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Obrero.gen.cpp
+C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/Observer.init.gen.cpp
 C:/Users/User/Desktop/Observer/Observer/Intermediate/Build/Win64/UE4Editor/Inc/Observer/ObserverGameMode.gen.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer/ObserverGameMode.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h

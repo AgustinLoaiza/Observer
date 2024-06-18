@@ -92,8 +92,8 @@ void ANaveTanque::RecibirDanio()
 	if (Vida <= 0)
 	{
 		Destroy();
-		AgujeroNegro = Cast<AAgujeroNegro>(this);
-		AgujeroNegro->SetContadorNaves(1);
+		/*AgujeroNegro = Cast<AAgujeroNegro>(this);
+		AgujeroNegro->SetContadorNaves(1);*/
 	}
 }
 

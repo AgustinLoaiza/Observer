@@ -6,7 +6,7 @@
 ACapsulaVida::ACapsulaVida()
 {
 	auto MeshAsset =
-		ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Trim_90_Out.Shape_Trim_90_Out'"));
+		ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
 	if (MeshAsset.Object != nullptr)
 	{
 		GetStaticMeshComponent()->SetStaticMesh(MeshAsset.Object);

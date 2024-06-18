@@ -13,7 +13,7 @@ ATrampaChina::ATrampaChina()
 {
 	PrimaryActorTick.bCanEverTick = true;
 	auto MeshAsset =
-		ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cone.Shape_Cone'"));
+		ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Game/Assets/Trampa/7382084a3527_Calavera__3d_asset_.7382084a3527_Calavera__3d_asset_'"));
 	if (MeshAsset.Object != nullptr)
 	{
 		GetStaticMeshComponent()->SetStaticMesh(MeshAsset.Object);

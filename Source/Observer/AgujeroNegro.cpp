@@ -11,19 +11,18 @@
 #include "FabricaDeObstaculos.h"
 #include "Radar.h"
 
-int a = 0;
 AAgujeroNegro::AAgujeroNegro()
 {
 	PrimaryActorTick.bCanEverTick = true; 
 	VidaPromedio = 0; 
-	ContadorNaves = 9;
+	//ContadorNaves = 9;
 	
 }
 
 void AAgujeroNegro::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	a=Naves.Num();
+	//a=Naves.Num();
 	//ContadorNaves = Naves.Num(); 
 	for (int i = 0; i < Naves.Num(); i++)
 	{
@@ -37,12 +36,12 @@ void AAgujeroNegro::Tick(float DeltaTime)
 			VidaPromedio = 0;
 		}
 	}
-	if (ContadorNaves==0)
-	{
-		//UE_LOG(LogTemp, Warning, TEXT("VICCC VICCC VICTORIA"));
-		GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("VICCC VICCC VICTORIA")), true, FVector2D(5.0f, 5.0f)); 
-	}
-	GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("Numeor de Naves: %d"), ContadorNaves));
+	//if (ContadorNaves==0)
+	//{
+	//	//UE_LOG(LogTemp, Warning, TEXT("VICCC VICCC VICTORIA"));
+	//	GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("VICCC VICCC VICTORIA")), true, FVector2D(5.0f, 5.0f)); 
+	//}
+	//GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("Numeor de Naves: %d"), ContadorNaves));
 }
 
 void AAgujeroNegro::GenerarMeteoros()
@@ -108,11 +107,11 @@ void AAgujeroNegro::GenerarNaves()
 	}
 }
 
-void AAgujeroNegro::SetContadorNaves(int _Contador)
-{
-	//GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("Contador de Naves: %d"), _Contador));
-	ContadorNaves = ContadorNaves-_Contador;
-}
+//void AAgujeroNegro::SetContadorNaves(int _Contador)
+//{
+//	//GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("Contador de Naves: %d"), _Contador));
+//	ContadorNaves = ContadorNaves-_Contador;
+//}
 
 
 

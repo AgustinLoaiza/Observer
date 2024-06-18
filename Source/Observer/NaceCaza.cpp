@@ -9,7 +9,7 @@
 ANaceCaza::ANaceCaza()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_TriPyramid.Shape_TriPyramid'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
 	mallaNaveEnemiga = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 	GetActorRelativeScale3D();
@@ -97,8 +97,8 @@ void ANaceCaza::RecibirDanio()
 	if (Vida <= 0)
 	{
 		Destroy();
-		AgujeroNegro = Cast<AAgujeroNegro>(this); 
-		AgujeroNegro->SetContadorNaves(1); 
+		/*AgujeroNegro = Cast<AAgujeroNegro>(this); 
+		AgujeroNegro->SetContadorNaves(1); */
 	}
 }
 

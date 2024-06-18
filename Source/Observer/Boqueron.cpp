@@ -15,6 +15,7 @@ ABoqueron::ABoqueron()
 
 	MeshBoqueron = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Boqueron"));
 	MeshBoqueron->SetupAttachment(RootComponent);
+	MeshBoqueron->SetRelativeScale3D(FVector(3.0f, 3.0f, 3.0f));
 	RootComponent = MeshBoqueron;
 }
 
@@ -83,11 +84,11 @@ void ABoqueron::BuildDisparador()
 			FVector ubicacionDisparador3 = UbicacionBoqueron + FVector(-200.0f, 0.0f, 0.0f);
 			FVector ubicacionDisparador4 = UbicacionBoqueron + FVector(-200.0f, 100.0f, 0.0f);
 			FVector ubicacionDisparador5 = UbicacionBoqueron + FVector(-200.0f, -100.0f, 0.0f);
-			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador1, FRotator::ZeroRotator);
-			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador2, FRotator::ZeroRotator);
-			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador3, FRotator::ZeroRotator);
-			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador4, FRotator::ZeroRotator);
-			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador5, FRotator::ZeroRotator);
+			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador1, FRotator(0.0f, 180.0f, 0.0f));
+			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador2, FRotator(0.0f, 180.0f, 0.0f));
+			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador3, FRotator(0.0f, 180.0f, 0.0f));
+			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador4, FRotator(0.0f, 180.0f, 0.0f));
+			newDisparador = World->SpawnActor<ADisparador>(ubicacionDisparador5, FRotator(0.0f, 180.0f, 0.0f));
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Se crearon los disparadores"));
 		}
 	}
@@ -179,10 +180,10 @@ void ABoqueron::BuildTrampaChina()
 			FVector ubicacionChino2 = UbicacionBoqueron + FVector(-300.0f, 350.0f, 0.0f);
 			FVector ubicacionChino3 = UbicacionBoqueron + FVector(-400.0f, -350.0f, 0.0f);
 			FVector ubicacionChino4 = UbicacionBoqueron + FVector(-500.0f, -500.0f, 0.0f);
-			newTrampaChina = World->SpawnActor<ATrampaChina>(ubicacionChino1, FRotator::ZeroRotator);
-			newTrampaChina = World->SpawnActor<ATrampaChina>(ubicacionChino2, FRotator::ZeroRotator);
-			newTrampaChina = World->SpawnActor<ATrampaChina>(ubicacionChino3, FRotator::ZeroRotator);
-			newTrampaChina = World->SpawnActor<ATrampaChina>(ubicacionChino4, FRotator::ZeroRotator);
+			newTrampaChina = World->SpawnActor<ATrampaChina>(ubicacionChino1, FRotator(0.0f, 180.0f, 0.0f));
+			newTrampaChina = World->SpawnActor<ATrampaChina>(ubicacionChino2, FRotator(0.0f, 180.0f, 0.0f));
+			newTrampaChina = World->SpawnActor<ATrampaChina>(ubicacionChino3, FRotator(0.0f, 180.0f, 0.0f));
+			newTrampaChina = World->SpawnActor<ATrampaChina>(ubicacionChino4, FRotator(0.0f, 180.0f, 0.0f));
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Se creo el Componente Chino"));
 		}
 	}

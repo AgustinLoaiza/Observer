@@ -31,7 +31,7 @@ public:
 	virtual void BuildEscudo() override;
 	virtual void BuildMuroEspinas() override;
 	virtual void BuildTrampaChina() override;
-	class UStaticMesh* SuperBoqueron = LoadObject<UStaticMesh>(nullptr, TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	class UStaticMesh* SuperBoqueron = LoadObject<UStaticMesh>(nullptr, TEXT("StaticMesh'/Game/Assets/Boqueron/921f4bb47e36_Fortaleza_militar__.921f4bb47e36_Fortaleza_militar__'"));
 	virtual class ABoqueron* GetBoqueron() override;
 	ABoqueron* Boqueron;
 };
