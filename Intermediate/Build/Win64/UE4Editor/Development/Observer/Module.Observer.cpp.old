@@ -32,7 +32,6 @@
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/Ingeniero.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/Memento.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/MementoVivere.cpp"
-#include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/Meteoro.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/MuroEspinas.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/MyPlayerController.cpp"
 #include "C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaceCaza.cpp"

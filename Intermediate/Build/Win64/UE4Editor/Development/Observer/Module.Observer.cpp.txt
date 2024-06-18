@@ -98,7 +98,6 @@ C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaEnergia.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Capsulas.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaVelocidad.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/CapsulaVida.cpp
-C:/Users/User/Desktop/Observer/Observer/Source/Observer/Cometa.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/ComponenteBoqueron.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\ComponenteBoqueron.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ComponenteBoqueron.generated.h
@@ -159,6 +158,7 @@ C:/Users/User/Desktop/Observer/Observer/Source/Observer/Memento.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MementoVivere.cpp
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\MyPlayerController.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\MyPlayerController.generated.h
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/Meteoro.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MuroEspinas.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/MyPlayerController.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaceCaza.cpp
@@ -170,6 +170,7 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\ObserverGameMode.generated.h
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveFugaz.cpp
+C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveNodriza.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/NaveTanque.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Obrero.cpp
 C:/Users/User/Desktop/Observer/Observer/Source/Observer/Observer.cpp

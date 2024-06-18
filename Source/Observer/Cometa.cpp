@@ -5,7 +5,7 @@
 
 ACometa::ACometa()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_WideCapsule.Shape_WideCapsule'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Assets/Cometas/08e11a1ebfcb_glowing_galactic_cr.08e11a1ebfcb_glowing_galactic_cr'"));
 	mallaObstaculo = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
 	mallaObstaculo->SetStaticMesh(ShipMesh.Object); 
 	GetActorRelativeScale3D();

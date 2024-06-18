@@ -10,7 +10,6 @@
 			"Capsulas.cpp.obj",
 			"CapsulaVelocidad.cpp.obj",
 			"CapsulaVida.cpp.obj",
-			"Cometa.cpp.obj",
 			"ComponenteBoqueron.cpp.obj",
 			"ComponenteBorracho.cpp.obj",
 			"ComponenteCapsulas.cpp.obj",
@@ -35,11 +34,13 @@
 			"Ingeniero.cpp.obj",
 			"Memento.cpp.obj",
 			"MementoVivere.cpp.obj",
+			"Meteoro.cpp.obj",
 			"MuroEspinas.cpp.obj",
 			"MyPlayerController.cpp.obj",
 			"NaceCaza.cpp.obj",
 			"NaveEnemiga.cpp.obj",
 			"NaveFugaz.cpp.obj",
+			"NaveNodriza.cpp.obj",
 			"NaveTanque.cpp.obj",
 			"Obrero.cpp.obj",
 			"Observer.cpp.obj",
@@ -56,8 +57,7 @@
 			"Suscriptora.cpp.obj",
 			"TrampaChina.cpp.obj",
 			"Visitor.cpp.obj",
-			"Meteoro.cpp.obj",
-			"NaveNodriza.cpp.obj"
+			"Cometa.cpp.obj"
 		],
 		"Module.Observer.gen.cpp.obj": [
 			"AgujeroBlanco.gen.cpp.obj",
