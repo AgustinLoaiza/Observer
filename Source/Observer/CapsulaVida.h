@@ -16,5 +16,7 @@ class OBSERVER_API ACapsulaVida : public ACapsulas
 
 public:
 	ACapsulaVida();
+
+	FString CapsulaAFabricar = "CapsulaVida";
 	
 };

@@ -81,7 +81,7 @@ void AObserverProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 	ANaveTanque* NaveTanque = Cast<ANaveTanque>(OtherActor);
 	if (NaveTanque != nullptr)
 	{
-		NaveTanque->RecibirDanio();
+		NaveTanque->RecibirDanio();   
 	}
 	ANaveNodriza* NaveNodriza = Cast<ANaveNodriza>(OtherActor);
 	if (NaveNodriza != nullptr)

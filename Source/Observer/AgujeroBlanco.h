@@ -15,6 +15,7 @@ class OBSERVER_API AAgujeroBlanco : public AFuerzaNatural
 	GENERATED_BODY()
 	
 public:
+	TArray<class ACapsulas*> Capsulas;
 	void GenerarMeteoros() override {};
 	void GenerarCometas() override {};
 	void GenerarNaves() override {};

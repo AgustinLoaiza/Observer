@@ -3,6 +3,7 @@
 
 #include "NaveTanque.h"
 #include "ObserverProjectile.h"
+#include "AgujeroNegro.h"
 
 ANaveTanque::ANaveTanque()
 {
@@ -91,6 +92,8 @@ void ANaveTanque::RecibirDanio()
 	if (Vida <= 0)
 	{
 		Destroy();
+		AgujeroNegro = Cast<AAgujeroNegro>(this);
+		AgujeroNegro->SetContadorNaves(1);
 	}
 }
 

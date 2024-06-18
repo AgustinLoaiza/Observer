@@ -39,5 +39,7 @@ public:
 	void Curarse() override;
 
 	FString FabricarNave = "NaveTanque";
+
+
 	
 };

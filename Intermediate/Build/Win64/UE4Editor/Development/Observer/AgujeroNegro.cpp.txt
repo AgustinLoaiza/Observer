@@ -23,6 +23,8 @@ C:\Users\User\Desktop\Observer\Observer\Source\Observer\NaveTanque.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\NaveTanque.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeNaves.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeNaves.generated.h
+C:\Users\User\Desktop\Observer\Observer\Source\Observer\FabricaDeObstaculos.h
+C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\FabricaDeObstaculos.generated.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Radar.h
 C:\Users\User\Desktop\Observer\Observer\Source\Observer\Publicador.h
 C:\Users\User\Desktop\Observer\Observer\Intermediate\Build\Win64\UE4Editor\Inc\Observer\Publicador.generated.h

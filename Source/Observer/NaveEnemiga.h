@@ -53,4 +53,6 @@ public:
 	virtual void RecibirDanio() PURE_VIRTUAL(ANaveEnemiga::RecibirDanio, );
 	virtual void Curarse() PURE_VIRTUAL(ANaveEnemiga::Curarse, );
 
+	class AAgujeroNegro* AgujeroNegro;
+
 };

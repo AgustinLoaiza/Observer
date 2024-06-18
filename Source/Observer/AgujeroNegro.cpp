@@ -8,12 +8,23 @@
 #include "NaveFugaz.h"
 #include "NaveTanque.h"
 #include "FabricaDeNaves.h"
+#include "FabricaDeObstaculos.h"
 #include "Radar.h"
+
+int a = 0;
+AAgujeroNegro::AAgujeroNegro()
+{
+	PrimaryActorTick.bCanEverTick = true; 
+	VidaPromedio = 0; 
+	ContadorNaves = 9;
+	
+}
 
 void AAgujeroNegro::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	VidaPromedio = 0;
+	a=Naves.Num();
+	//ContadorNaves = Naves.Num(); 
 	for (int i = 0; i < Naves.Num(); i++)
 	{
 		VidaPromedio = (Naves[i]->Vida + VidaPromedio / Naves.Num());
@@ -26,6 +37,12 @@ void AAgujeroNegro::Tick(float DeltaTime)
 			VidaPromedio = 0;
 		}
 	}
+	if (ContadorNaves==0)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("VICCC VICCC VICTORIA"));
+		GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("VICCC VICCC VICTORIA")), true, FVector2D(5.0f, 5.0f)); 
+	}
+	GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("Numeor de Naves: %d"), ContadorNaves));
 }
 
 void AAgujeroNegro::GenerarMeteoros()
@@ -34,7 +51,9 @@ void AAgujeroNegro::GenerarMeteoros()
 	for (int i = 0; i < 5; i++)
 	{
 		FVector SpawnLocation = FVector(FMath::RandRange(-1000.0f, 500.0f), FMath::RandRange(-1200.0f, -1000.0f), 215.0f);
-		AMeteoro* NewMeteoro = GetWorld()->SpawnActor<AMeteoro>(AMeteoro::StaticClass(), SpawnLocation, FRotator::ZeroRotator);
+		//AMeteoro* NewMeteoro = GetWorld()->SpawnActor<AMeteoro>(AMeteoro::StaticClass(), SpawnLocation, FRotator::ZeroRotator);
+		AObstaculos* NewMeteoro = AFabricaDeObstaculos::CrearObstaculo("Meteoro", GetWorld(), SpawnLocation, FRotator::ZeroRotator);
+		Obstaculos.Add(NewMeteoro);
 	}
 }
 
@@ -44,7 +63,9 @@ void AAgujeroNegro::GenerarCometas()
 	for (int i = 0; i < 5; i++)
 	{
 		FVector SpawnLocation = FVector(FMath::RandRange(-1000.0f, 500.0f), FMath::RandRange(1200.0f, 1000.0f), 215.0f);
-		ACometa* NewObstacle = GetWorld()->SpawnActor<ACometa>(ACometa::StaticClass(), SpawnLocation, FRotator::ZeroRotator);
+		//ACometa* NewObstacle = GetWorld()->SpawnActor<ACometa>(ACometa::StaticClass(), SpawnLocation, FRotator::ZeroRotator);
+		AObstaculos* NewObstacle = AFabricaDeObstaculos::CrearObstaculo("Cometa", GetWorld(), SpawnLocation, FRotator::ZeroRotator);
+		Obstaculos.Add(NewObstacle);
 	}
 }
 
@@ -86,5 +107,13 @@ void AAgujeroNegro::GenerarNaves()
 		Naves.Add(NuevaNaveCaza);
 	}
 }
+
+void AAgujeroNegro::SetContadorNaves(int _Contador)
+{
+	//GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, FString::Printf(TEXT("Contador de Naves: %d"), _Contador));
+	ContadorNaves = ContadorNaves-_Contador;
+}
+
+
 
 

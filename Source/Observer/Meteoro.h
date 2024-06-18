@@ -24,4 +24,5 @@ public:
 public:
 	void mover(float DeltaTime) override;
 	
+	FString ObstaculoAFabricar = "Meteoro";
 };

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Observer.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5B85A12D-DE19-4109-9EFF-61569800CAAB}</UniqueIdentifier>
+      <UniqueIdentifier>{E703ED28-F659-436C-B63B-C725FF0384F7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Observer.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{1D9A5D59-432B-452C-8D81-EEFFB4D6BD8F}</UniqueIdentifier>
+      <UniqueIdentifier>{C8BE1A6D-2B38-49E5-9AFC-D819770CC9E6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Observer">
-      <UniqueIdentifier>{C2C85075-DC2D-47B8-8BC1-B4919A42CBE0}</UniqueIdentifier>
+      <UniqueIdentifier>{A5A29F1B-DE9C-46D8-BC66-F2E8B755397C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Observer\AgujeroBlanco.cpp">
       <Filter>Source\Observer</Filter>
@@ -184,10 +184,22 @@
     <ClInclude Include="..\..\Source\Observer\EstrategiaPesada.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\FabricaDeCapsulas.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\FabricaDeCapsulas.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Observer\FabricaDeNaves.cpp">
       <Filter>Source\Observer</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Observer\FabricaDeNaves.h">
+      <Filter>Source\Observer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Observer\FabricaDeObstaculos.cpp">
+      <Filter>Source\Observer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Observer\FabricaDeObstaculos.h">
       <Filter>Source\Observer</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Observer\FuerzaNatural.cpp">

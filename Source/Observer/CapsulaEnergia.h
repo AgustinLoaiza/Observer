@@ -17,4 +17,5 @@ class OBSERVER_API ACapsulaEnergia : public ACapsulas
 public:
 	ACapsulaEnergia();
 	
+	FString CapsulaAFabricar = "CapsulaEnergia";
 };

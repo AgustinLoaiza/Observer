@@ -122,10 +122,10 @@ void AObserverGameMode::Tick(float DeltaTime)
 		Temporizador1 = 0.0f;
 		
 	}
-	if (Naves.Num()<=0)
+	/*if (Naves.Num()<=0) 
 	{
-		//GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, TEXT("VICCC VICCC VICTORIA"), true, FVector2D(5.0f, 5.0f));
-	}
+		GEngine->AddOnScreenDebugMessage(-50, 150.f, FColor::Green, TEXT("VICCC VICCC VICTORIA"), true, FVector2D(5.0f, 5.0f));
+	}*/
 }
 
 void AObserverGameMode::GuardarJuego()

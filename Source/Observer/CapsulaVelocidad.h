@@ -16,5 +16,7 @@ class OBSERVER_API ACapsulaVelocidad : public ACapsulas
 
 public:
 	ACapsulaVelocidad();
+
+	FString CapsulaAFabricar = "CapsulaVelocidad";
 	
 };

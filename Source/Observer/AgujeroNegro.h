@@ -15,7 +15,9 @@ class OBSERVER_API AAgujeroNegro : public AFuerzaNatural
 	GENERATED_BODY()
 
 public:
+	AAgujeroNegro();
 	TArray<class ANaveEnemiga*> Naves; 
+	TArray<class AObstaculos*> Obstaculos;
 	class ARadar* Radar; 
 	float VidaPromedio;
 	virtual void Tick(float DeltaTime) override;
@@ -24,5 +26,8 @@ public:
 	void GenerarCometas() override;
 	void GenerarNaves() override;
 	void GenerarCapsulas() override {};
+
+	int ContadorNaves;
+	void SetContadorNaves(int _Contador);
 	
 };
